@@ -37,14 +37,7 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/ai4ai.github.io/people/";
           },
-        },{id: "dropdown-bookshelf",
-              title: "bookshelf",
-              description: "",
-              section: "Dropdown",
-              handler: () => {
-                window.location.href = "/ai4ai.github.io/books/";
-              },
-            },{id: "post-the-alignment-auditor-a-bayesian-framework-for-verifying-and-refining-llm-objectives",
+        },{id: "post-the-alignment-auditor-a-bayesian-framework-for-verifying-and-refining-llm-objectives",
         
           title: "The Alignment Auditor: A Bayesian Framework for Verifying and Refining LLM Objectives",
         
