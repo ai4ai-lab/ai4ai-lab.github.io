@@ -12,7 +12,8 @@
 # AI4AI publication label colours (keys must match the abbr field in papers.bib)
 #   green  = preprints
 #   orange = healthcare and medical venues
-#   purple = machine learning venues
+#   blue    = ICML, NeurIPS, ICLR, JAIR
+#   magenta = other machine learning venues
 # ---------------------------------------------------------------------------
 
 # Preprints
@@ -42,24 +43,24 @@
 "BMJ HCI": { color: "#e8710a" }
 "JAIDS": { color: "#e8710a" }
 
-# Machine learning
-"ICLR": { color: "#6f42c1" }
-"ICLR Workshop": { color: "#6f42c1" }
-"ICML": { color: "#6f42c1" }
-"ICML Workshop": { color: "#6f42c1" }
-"NeurIPS": { color: "#6f42c1" }
-"NeurIPS Workshop": { color: "#6f42c1" }
-"TMLR": { color: "#6f42c1" }
-"JMLR": { color: "#6f42c1" }
-"JAIR": { color: "#6f42c1" }
-"AISTATS": { color: "#6f42c1" }
-"UAI": { color: "#6f42c1" }
-"AAAI": { color: "#6f42c1" }
-"IJCAI": { color: "#6f42c1" }
-"COLM": { color: "#6f42c1" }
-"RLC": { color: "#6f42c1" }
-"RLC Workshop": { color: "#6f42c1" }
-"KDD": { color: "#6f42c1" }
-"CVPR": { color: "#6f42c1" }
-"DAGM GCPR": { color: "#6f42c1" }
-"CAMLIS": { color: "#6f42c1" }
+# Machine learning (blue: ICML, NeurIPS, ICLR, JAIR; magenta: the rest)
+"ICLR": { color: "#1565c0" }
+"ICLR Workshop": { color: "#c2185b" }
+"ICML": { color: "#1565c0" }
+"ICML Workshop": { color: "#c2185b" }
+"NeurIPS": { color: "#1565c0" }
+"NeurIPS Workshop": { color: "#c2185b" }
+"TMLR": { color: "#c2185b" }
+"JMLR": { color: "#c2185b" }
+"JAIR": { color: "#1565c0" }
+"AISTATS": { color: "#c2185b" }
+"UAI": { color: "#c2185b" }
+"AAAI": { color: "#c2185b" }
+"IJCAI": { color: "#c2185b" }
+"COLM": { color: "#c2185b" }
+"RLC": { color: "#c2185b" }
+"RLC Workshop": { color: "#c2185b" }
+"KDD": { color: "#c2185b" }
+"CVPR": { color: "#c2185b" }
+"DAGM GCPR": { color: "#c2185b" }
+"CAMLIS": { color: "#c2185b" }
