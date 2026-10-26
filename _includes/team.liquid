@@ -1,0 +1,27 @@
+<div class="lab-team-grid">
+  {% for member in site.data.team %}
+    {% if member.url %}
+      {% if member.url contains '://' %}
+        {% assign member_url = member.url %}
+      {% else %}
+        {% assign member_url = member.url | relative_url %}
+      {% endif %}
+    {% endif %}
+    <div class="lab-member">
+      {% if member.url %}<a href="{{ member_url }}">{% endif %}
+      {% if member.image %}
+        <img
+          class="lab-member-photo"
+          src="{{ member.image | prepend: 'assets/img/' | relative_url }}"
+          alt="{{ member.name }}"
+          loading="lazy"
+        >
+      {% else %}
+        <div class="lab-member-photo lab-member-initials">{{ member.name | slice: 0 }}</div>
+      {% endif %}
+      <div class="lab-member-name">{{ member.name }}</div>
+      {% if member.url %}</a>{% endif %}
+      <div class="lab-member-role">{{ member.role }}</div>
+    </div>
+  {% endfor %}
+</div>
