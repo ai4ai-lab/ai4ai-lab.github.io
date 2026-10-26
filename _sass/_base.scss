@@ -756,7 +756,7 @@ footer.sticky-bottom {
           display: inline-block;
           background-color: var(--global-theme-color);
           margin-bottom: 0.5rem;
-          color: var(--global-card-bg-color) !important;
+          color: white !important; // white label text in both light and dark mode
 
           a {
             color: white;

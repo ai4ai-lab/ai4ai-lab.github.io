@@ -13,7 +13,7 @@
 #   green  = preprints
 #   orange = healthcare and medical venues
 #   blue    = ICML, NeurIPS, ICLR, JAIR
-#   magenta = other machine learning venues
+#   purple  = other machine learning venues (site theme purple)
 # ---------------------------------------------------------------------------
 
 # Preprints
@@ -43,24 +43,24 @@
 "BMJ HCI": { color: "#e8710a" }
 "JAIDS": { color: "#e8710a" }
 
-# Machine learning (blue: ICML, NeurIPS, ICLR, JAIR; magenta: the rest)
+# Machine learning (blue: ICML, NeurIPS, ICLR, JAIR; purple: the rest)
 "ICLR": { color: "#1565c0" }
-"ICLR Workshop": { color: "#c2185b" }
+"ICLR Workshop": { color: "#b509ac" }
 "ICML": { color: "#1565c0" }
-"ICML Workshop": { color: "#c2185b" }
+"ICML Workshop": { color: "#b509ac" }
 "NeurIPS": { color: "#1565c0" }
-"NeurIPS Workshop": { color: "#c2185b" }
-"TMLR": { color: "#c2185b" }
-"JMLR": { color: "#c2185b" }
+"NeurIPS Workshop": { color: "#b509ac" }
+"TMLR": { color: "#b509ac" }
+"JMLR": { color: "#b509ac" }
 "JAIR": { color: "#1565c0" }
-"AISTATS": { color: "#c2185b" }
-"UAI": { color: "#c2185b" }
-"AAAI": { color: "#c2185b" }
-"IJCAI": { color: "#c2185b" }
-"COLM": { color: "#c2185b" }
-"RLC": { color: "#c2185b" }
-"RLC Workshop": { color: "#c2185b" }
-"KDD": { color: "#c2185b" }
-"CVPR": { color: "#c2185b" }
-"DAGM GCPR": { color: "#c2185b" }
-"CAMLIS": { color: "#c2185b" }
+"AISTATS": { color: "#b509ac" }
+"UAI": { color: "#b509ac" }
+"AAAI": { color: "#b509ac" }
+"IJCAI": { color: "#b509ac" }
+"COLM": { color: "#b509ac" }
+"RLC": { color: "#b509ac" }
+"RLC Workshop": { color: "#b509ac" }
+"KDD": { color: "#b509ac" }
+"CVPR": { color: "#b509ac" }
+"DAGM GCPR": { color: "#b509ac" }
+"CAMLIS": { color: "#b509ac" }
