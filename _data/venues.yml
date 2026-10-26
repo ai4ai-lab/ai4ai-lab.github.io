@@ -22,26 +22,26 @@
 "bioRxiv": { color: "#009f36" }
 
 # Healthcare and medical
-"MLHC": { color: "#e8710a" }
-"ML4H": { color: "#e8710a" }
-"CHIL": { color: "#e8710a" }
-"AMIA": { color: "#e8710a" }
-"npj Digit Med": { color: "#e8710a" }
-"Nat Med": { color: "#e8710a" }
-"Nat Commun": { color: "#e8710a" }
-"Lancet Digit Health": { color: "#e8710a" }
-"Intensive Care Med": { color: "#e8710a" }
-"ICM Exp": { color: "#e8710a" }
-"Crit Care Med": { color: "#e8710a" }
-"AJRCCM": { color: "#e8710a" }
-"ATS": { color: "#e8710a" }
-"ERJ": { color: "#e8710a" }
-"BMC Pulm Med": { color: "#e8710a" }
-"Hum Reprod": { color: "#e8710a" }
-"Anaesthesia": { color: "#e8710a" }
-"Blood": { color: "#e8710a" }
-"BMJ HCI": { color: "#e8710a" }
-"JAIDS": { color: "#e8710a" }
+"MLHC": { color: "#f29105" }
+"ML4H": { color: "#f29105" }
+"CHIL": { color: "#f29105" }
+"AMIA": { color: "#f29105" }
+"npj Digit Med": { color: "#f29105" }
+"Nat Med": { color: "#f29105" }
+"Nat Commun": { color: "#f29105" }
+"Lancet Digit Health": { color: "#f29105" }
+"Intensive Care Med": { color: "#f29105" }
+"ICM Exp": { color: "#f29105" }
+"Crit Care Med": { color: "#f29105" }
+"AJRCCM": { color: "#f29105" }
+"ATS": { color: "#f29105" }
+"ERJ": { color: "#f29105" }
+"BMC Pulm Med": { color: "#f29105" }
+"Hum Reprod": { color: "#f29105" }
+"Anaesthesia": { color: "#f29105" }
+"Blood": { color: "#f29105" }
+"BMJ HCI": { color: "#f29105" }
+"JAIDS": { color: "#f29105" }
 
 # Machine learning (blue: ICML, NeurIPS, ICLR, JAIR; purple: the rest)
 "ICLR": { color: "#00369f" }
