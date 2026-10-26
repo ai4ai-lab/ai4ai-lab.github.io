@@ -71,6 +71,7 @@ VENUE_ABBR = [
     ("conference on language modeling", "COLM"),
     ("reinforcement learning conference", "RLC"),
     ("reinforcement learning journal", "RLC"),
+    (" rlc", "RLC"),
     ("computer vision and pattern recognition", "CVPR"),
     ("nature communications", "Nat Commun"),
     ("nature medicine", "Nat Med"),
@@ -278,10 +279,14 @@ class SerpApiScholar:
 def build_entry(item, info, used_keys):
     title = item["title"]
     authors = format_authors(info.get("authors") or item["authors"])
-    year = item["year"] or (re.findall(r"\d{4}", info.get("publication date", "")) or [""])[0]
     journal = info.get("journal")
     conf = info.get("conference") or info.get("book")
     venue_text = journal or conf or item["venue"]
+    # Scholar sometimes omits the year; fall back to the date field, then the venue name.
+    year = item["year"]
+    for text in (info.get("publication date", ""), venue_text):
+        if not year:
+            year = (re.findall(r"(?:19|20)\d{2}", text) or [""])[0]
 
     is_preprint = bool(re.search(r"arxiv|medrxiv|biorxiv|preprint", venue_text, re.I))
     if conf and not journal:
@@ -391,7 +396,7 @@ def main():
         block = "\n\n".join(entries) + "\n\n"
         BIB.write_text(bib_text[:pos] + block + bib_text[pos:])
     if newly_seen:
-        SEEN.write_text(json.dumps(sorted(seen | newly_seen), indent=1) + "\n")
+        SEEN.write_text(json.dumps(sorted(seen | newly_seen), indent=2) + "\n")
 
 
 if __name__ == "__main__":
