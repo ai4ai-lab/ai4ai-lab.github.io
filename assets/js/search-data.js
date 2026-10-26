@@ -30,13 +30,6 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/ai4ai.github.io/projects/";
           },
-        },{id: "nav-repositories",
-          title: "repositories",
-          description: "Research code and open-source projects from the AI4AI Lab at Imperial College London.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/ai4ai.github.io/repositories/";
-          },
         },{id: "nav-cv",
           title: "cv",
           description: "Curriculum Vitae",
