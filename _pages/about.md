@@ -62,6 +62,6 @@ latest_posts:
     </div>
   </div>
   <p class="lab-join">
-    <b>Join us:</b> we are looking for PhD students interested in reinforcement learning, causal inference, Bayesian methods and interpretability with applications to healthcare. Contact <a href="mailto:s.parbhoo@imperial.ac.uk">s.parbhoo@imperial.ac.uk</a>.
+    <b>Join us:</b> we are looking for PhD students interested in reinforcement learning, causal inference, Bayesian methods and interpretability with applications to healthcare. Contact <a href="mailto:sp.ai4ai.lab@gmail.com">sp.ai4ai.lab@gmail.com</a>.
   </p>
 </section>
