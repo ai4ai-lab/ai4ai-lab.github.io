@@ -2,6 +2,7 @@
 layout: default
 ---
 <div class="post">
+  {% unless page.hero %}
   <header class="post-header">
     <h1 class="post-title">
       {% if site.title == 'blank' %}
@@ -13,6 +14,7 @@ layout: default
     </h1>
     <p class="desc">{{ page.subtitle }}</p>
   </header>
+  {% endunless %}
 
   <article>
     {% if page.profile %}
@@ -42,10 +44,20 @@ layout: default
 
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
-      <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
-      </h2>
+      <div class="lab-section-head">
+        <h2 class="lab-section-title">Recent news</h2>
+        <a class="lab-section-link" href="{{ '/news/' | relative_url }}">All news →</a>
+      </div>
       {% include news.liquid limit=true %}
+    {% endif %}
+
+    <!-- Team -->
+    {% if page.team and site.data.team %}
+      <div class="lab-section-head">
+        <h2 class="lab-section-title">The team</h2>
+        <a class="lab-section-link" href="{{ '/people/' | relative_url }}">Full team page →</a>
+      </div>
+      {% include team.liquid %}
     {% endif %}
 
     <!-- Latest posts -->
@@ -58,9 +70,10 @@ layout: default
 
     <!-- Selected papers -->
     {% if page.selected_papers %}
-      <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
-      </h2>
+      <div class="lab-section-head">
+        <h2 class="lab-section-title">Selected publications</h2>
+        <a class="lab-section-link" href="{{ '/publications/' | relative_url }}">All publications →</a>
+      </div>
       {% include selected_papers.liquid %}
     {% endif %}
 

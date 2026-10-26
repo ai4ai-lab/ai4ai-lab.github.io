@@ -1,10 +1,10 @@
 ---
 layout: profiles
 permalink: /people/
-title: people
+title: People
 description: members of the AI4AI Lab
 nav: true
-nav_order: 7
+nav_order: 4
 
 profiles:
   # To add a lab member, copy the block below, change the image and content file,
