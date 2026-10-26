@@ -2,27 +2,19 @@
 layout: profiles
 permalink: /people/
 title: people
-description: members of the lab or group
+description: members of the AI4AI Lab
 nav: true
 nav_order: 7
 
 profiles:
-  # if you want to include more than one profile, just replicate the following block
-  # and create one content file for each profile inside _pages/
+  # To add a lab member, copy the block below, change the image and content file,
+  # and create the content file inside _pages/ (see people_sonali.md).
   - align: right
     image: prof_pic.jpg
-    content: about_einstein.md
+    content: people_sonali.md
     image_circular: false # crops the image to make it circular
     more_info: >
-      <p>555 your office number</p>
-      <p>123 your address street</p>
-      <p>Your City, State 12345</p>
-  - align: left
-    image: prof_pic.jpg
-    content: about_einstein.md
-    image_circular: false # crops the image to make it circular
-    more_info: >
-      <p>555 your office number</p>
-      <p>123 your address street</p>
-      <p>Your City, State 12345</p>
+      <p>Assistant Professor</p>
+      <p>Imperial College London</p>
+      <p>s.parbhoo@imperial.ac.uk</p>
 ---
