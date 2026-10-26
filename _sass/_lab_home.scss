@@ -202,3 +202,44 @@
     gap: 1.5rem;
   }
 }
+
+// People page: photo and bio side by side for every person
+.people-row {
+  display: flex;
+  flex-direction: row-reverse; // photo on the right, like the original layout
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin: 1rem 0 1.5rem;
+
+  .people-photo.profile {
+    flex: 0 0 30%;
+    width: 30%;
+    margin: 0;
+    float: none;
+  }
+
+  .people-text {
+    flex: 1 1 auto;
+    min-width: 0;
+
+    h2 {
+      margin-top: 0;
+    }
+  }
+}
+
+.people-row.people-row-left {
+  flex-direction: row; // photo on the left
+}
+
+@media (max-width: 576px) {
+  .people-row,
+  .people-row.people-row-left {
+    flex-direction: column;
+
+    .people-photo.profile {
+      width: 100%;
+      flex-basis: auto;
+    }
+  }
+}

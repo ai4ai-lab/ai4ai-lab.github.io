@@ -6,7 +6,8 @@ layout: page
     {% if page.profiles %}
       {% for profile in page.profiles %}
         <hr>
-        <div class="profile float-{% if profile.align == 'left' %}left{% else %}right{% endif %}">
+        <div class="people-row{% if profile.align == 'left' %} people-row-left{% endif %}">
+        <div class="people-photo profile">
           {% if profile.image %}
             {% assign profile_image_path = profile.image | prepend: 'assets/img/' %}
             {% if profile.image_circular %}
@@ -22,13 +23,14 @@ layout: page
           {% endif %}
         </div>
 
-        <div class="clearfix">
+        <div class="people-text">
           {% if profile.content %}
             {% capture profile_content %}{% include_relative {{ profile.content }} %}{% endcapture %}
             {{ profile_content | markdownify }}
           {% else %}
             {{ content }}
           {% endif %}
+        </div>
         </div>
       {% endfor %}
     {% endif %}
