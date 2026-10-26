@@ -7,7 +7,7 @@ entry already in the .bib file. Every processed id is recorded in
 _bibliography/.scholar_seen.json, so an auto-added entry you delete by hand
 will not come back.
 
-Fetches Scholar directly. If Scholar blocks the request and the
+Fetches Scholar directly; run it from your own computer (see bin/scholar_sync_local.sh).
 SERPAPI_API_KEY environment variable is set, falls back to SerpApi.
 
 Usage:
