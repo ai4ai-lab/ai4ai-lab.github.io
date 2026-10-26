@@ -7,3 +7,59 @@
 
 "Vision":
   color: "#009f36"
+
+# ---------------------------------------------------------------------------
+# AI4AI publication label colours (keys must match the abbr field in papers.bib)
+#   green  = preprints
+#   orange = healthcare and medical venues
+#   purple = machine learning venues
+# ---------------------------------------------------------------------------
+
+# Preprints
+"arXiv": { color: "#2e7d32" }
+"medRxiv": { color: "#2e7d32" }
+"bioRxiv": { color: "#2e7d32" }
+
+# Healthcare and medical
+"MLHC": { color: "#e8710a" }
+"ML4H": { color: "#e8710a" }
+"CHIL": { color: "#e8710a" }
+"AMIA": { color: "#e8710a" }
+"npj Digit Med": { color: "#e8710a" }
+"Nat Med": { color: "#e8710a" }
+"Nat Commun": { color: "#e8710a" }
+"Lancet Digit Health": { color: "#e8710a" }
+"Intensive Care Med": { color: "#e8710a" }
+"ICM Exp": { color: "#e8710a" }
+"Crit Care Med": { color: "#e8710a" }
+"AJRCCM": { color: "#e8710a" }
+"ATS": { color: "#e8710a" }
+"ERJ": { color: "#e8710a" }
+"BMC Pulm Med": { color: "#e8710a" }
+"Hum Reprod": { color: "#e8710a" }
+"Anaesthesia": { color: "#e8710a" }
+"Blood": { color: "#e8710a" }
+"BMJ HCI": { color: "#e8710a" }
+"JAIDS": { color: "#e8710a" }
+
+# Machine learning
+"ICLR": { color: "#6f42c1" }
+"ICLR Workshop": { color: "#6f42c1" }
+"ICML": { color: "#6f42c1" }
+"ICML Workshop": { color: "#6f42c1" }
+"NeurIPS": { color: "#6f42c1" }
+"NeurIPS Workshop": { color: "#6f42c1" }
+"TMLR": { color: "#6f42c1" }
+"JMLR": { color: "#6f42c1" }
+"JAIR": { color: "#6f42c1" }
+"AISTATS": { color: "#6f42c1" }
+"UAI": { color: "#6f42c1" }
+"AAAI": { color: "#6f42c1" }
+"IJCAI": { color: "#6f42c1" }
+"COLM": { color: "#6f42c1" }
+"RLC": { color: "#6f42c1" }
+"RLC Workshop": { color: "#6f42c1" }
+"KDD": { color: "#6f42c1" }
+"CVPR": { color: "#6f42c1" }
+"DAGM GCPR": { color: "#6f42c1" }
+"CAMLIS": { color: "#6f42c1" }
