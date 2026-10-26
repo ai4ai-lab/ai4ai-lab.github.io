@@ -39,6 +39,7 @@ profiles:
       <p>PhD student, AI4Health CDT</p>
       <p>Imperial College London</p>
   - align: right
+    image: yuxin_wang.jpg
     content: people_yuxin.md
     image_circular: false # crops the image to make it circular
     more_info: >
