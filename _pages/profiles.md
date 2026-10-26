@@ -31,4 +31,11 @@ profiles:
     more_info: >
       <p>PhD student</p>
       <p>Imperial College London</p>
+  - align: right
+    image: elizaveta_sheremtyeva.jpg
+    content: people_elizaveta.md
+    image_circular: false # crops the image to make it circular
+    more_info: >
+      <p>PhD student, AI4Health CDT</p>
+      <p>Imperial College London</p>
 ---
