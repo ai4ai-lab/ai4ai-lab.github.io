@@ -217,6 +217,16 @@
         {% else %}
           <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">PDF</a>
         {% endif %}
+      {% elsif entry.google_scholar_id %}
+        {% comment %} No PDF file given: link to the paper's Google Scholar page instead. {% endcomment %}
+        <a
+          href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user={{ site.data.socials.scholar_userid }}&citation_for_view={{ site.data.socials.scholar_userid }}:{{ entry.google_scholar_id }}"
+          class="btn btn-sm z-depth-0"
+          role="button"
+          target="_blank"
+          rel="noopener noreferrer"
+          >PDF</a
+        >
       {% endif %}
       {% if entry.supp %}
         {% if entry.supp contains '://' %}
