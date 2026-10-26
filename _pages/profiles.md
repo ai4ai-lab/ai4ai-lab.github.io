@@ -38,4 +38,10 @@ profiles:
     more_info: >
       <p>PhD student, AI4Health CDT</p>
       <p>Imperial College London</p>
+  - align: right
+    content: people_yuxin.md
+    image_circular: false # crops the image to make it circular
+    more_info: >
+      <p>Visiting PhD student</p>
+      <p>LMU Munich</p>
 ---
