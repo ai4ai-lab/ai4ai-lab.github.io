@@ -4,15 +4,6 @@ title: about
 permalink: /
 subtitle: <a href='https://www.imperial.ac.uk/computing'>Imperial College London</a>
 
-profile:
-  align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>Assistant Professor</p>
-    <p>Imperial College London</p>
-    <p>s.parbhoo@imperial.ac.uk</p>
-
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
@@ -26,6 +17,10 @@ latest_posts:
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
+
+<div style="max-width: 640px; margin: 0 auto 1.5rem;">
+{% include figure.liquid loading="eager" path="assets/img/lab_group.jpg" class="img-fluid rounded z-depth-1" alt="AI4AI Lab members" %}
+</div>
 
 Welcome to the **AI for Actionable Impact (AI4AI) Research Lab** at Imperial College London, led by Dr. Sonali Parbhoo.
 
