@@ -24,4 +24,11 @@ profiles:
     more_info: >
       <p>MD-PhD student</p>
       <p>Imperial College London</p>
+  - align: right
+    image: ritam_majumdar.jpg
+    content: people_ritam.md
+    image_circular: false # crops the image to make it circular
+    more_info: >
+      <p>PhD student</p>
+      <p>Imperial College London</p>
 ---
