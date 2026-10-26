@@ -89,6 +89,13 @@ FIELD_ORDER = [
 
 # ---------------------------------------------------------------- utilities
 
+def warn(msg, level="warning"):
+    """Print to stderr and, on GitHub Actions, as an annotation on the run."""
+    print(msg, file=sys.stderr)
+    if os.environ.get("GITHUB_ACTIONS"):
+        print(f"::{level}::{msg}")
+
+
 def norm_title(t):
     t = unicodedata.normalize("NFKD", t).encode("ascii", "ignore").decode()
     t = re.sub(r"[{}\\]", "", t).lower()
@@ -336,9 +343,10 @@ def main():
             break
         except (Blocked, requests.RequestException, RuntimeError) as e:
             last_err = e
-            print(f"{type(s).__name__}: {e}", file=sys.stderr)
+            warn(f"{type(s).__name__}: {e}")
     if items is None:
-        sys.exit(f"Could not read the Scholar profile: {last_err}")
+        warn(f"Could not read the Scholar profile: {last_err}", "error")
+        sys.exit(1)
     print(f"{len(items)} items on Scholar profile {user} (via {type(src).__name__})")
 
     new, newly_seen = [], set()
@@ -359,11 +367,10 @@ def main():
         try:
             info = src.details(it["id"])
         except Blocked as e:
-            print(f"Stopped fetching details: {e}. Remaining papers will be added next run.",
-                  file=sys.stderr)
+            warn(f"Stopped fetching details: {e}. Remaining papers will be added next run.")
             break
         except Exception as e:  # keep going with listing data only
-            print(f"Details failed for '{it['title']}': {e}", file=sys.stderr)
+            warn(f"Details failed for '{it['title']}': {e}")
             info = {}
         entries.append(build_entry(it, info, keys))
         titles.append(norm_title(it["title"]))
@@ -388,4 +395,8 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except Exception as e:
+        warn(f"Scholar sync crashed: {type(e).__name__}: {e}", "error")
+        raise
