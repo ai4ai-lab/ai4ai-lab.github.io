@@ -3,7 +3,7 @@ layout: page
 permalink: /repositories/
 title: repositories
 description: Research code and open-source projects from the AI4AI Lab at Imperial College London.
-nav: true
+nav: false
 nav_order: 4
 ---
 
