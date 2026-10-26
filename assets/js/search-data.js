@@ -32,7 +32,7 @@ ninja.data = [{
           },
         },{id: "nav-people",
           title: "people",
-          description: "members of the lab or group",
+          description: "members of the AI4AI Lab",
           section: "Navigation",
           handler: () => {
             window.location.href = "/ai4ai.github.io/people/";
