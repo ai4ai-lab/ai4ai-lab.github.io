@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='https://www.imperial.ac.uk/computing'>Imperial College London</a>
+subtitle: <a href='https://www.imperial.ac.uk/engineering/departments/electrical-engineering/'>Department of Electrical and Electronic Engineering, Imperial College London</a>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
