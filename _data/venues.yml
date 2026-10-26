@@ -17,9 +17,9 @@
 # ---------------------------------------------------------------------------
 
 # Preprints
-"arXiv": { color: "#2e7d32" }
-"medRxiv": { color: "#2e7d32" }
-"bioRxiv": { color: "#2e7d32" }
+"arXiv": { color: "#009f36" }
+"medRxiv": { color: "#009f36" }
+"bioRxiv": { color: "#009f36" }
 
 # Healthcare and medical
 "MLHC": { color: "#e8710a" }
@@ -44,15 +44,15 @@
 "JAIDS": { color: "#e8710a" }
 
 # Machine learning (blue: ICML, NeurIPS, ICLR, JAIR; purple: the rest)
-"ICLR": { color: "#1565c0" }
+"ICLR": { color: "#00369f" }
 "ICLR Workshop": { color: "#b509ac" }
-"ICML": { color: "#1565c0" }
+"ICML": { color: "#00369f" }
 "ICML Workshop": { color: "#b509ac" }
-"NeurIPS": { color: "#1565c0" }
+"NeurIPS": { color: "#00369f" }
 "NeurIPS Workshop": { color: "#b509ac" }
 "TMLR": { color: "#b509ac" }
 "JMLR": { color: "#b509ac" }
-"JAIR": { color: "#1565c0" }
+"JAIR": { color: "#00369f" }
 "AISTATS": { color: "#b509ac" }
 "UAI": { color: "#b509ac" }
 "AAAI": { color: "#b509ac" }
