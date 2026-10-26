@@ -5,24 +5,25 @@
     <div class="col col-sm-2 abbr">
       {%- if entry.abbr -%}
         {%- if site.data.venues[entry.abbr] -%}
-          {% assign venue_style = null %}
+          {% comment %} Label text is forced white inline so no stylesheet can override it. {% endcomment %}
+          {% assign venue_style = 'style="color:#fff !important"' %}
           {% if site.data.venues[entry.abbr].color != blank %}
-            {% assign venue_style = site.data.venues[entry.abbr].color | prepend: 'style="background-color:' | append: '"' %}
+            {% assign venue_style = site.data.venues[entry.abbr].color | prepend: 'style="color:#fff !important;background-color:' | append: '"' %}
           {%- endif -%}
           <abbr
             class="badge rounded w-100"
-            {% if venue_style %}
-              {{ venue_style }}
-            {% endif -%}
+            {{ venue_style }}
           >
             {% if site.data.venues[entry.abbr].url %}
-              <a href="{{ site.data.venues[entry.abbr].url }}">{{ entry.abbr }}</a>
+              <a href="{{ site.data.venues[entry.abbr].url }}" style="color:#fff !important">{{ entry.abbr }}</a>
             {% else %}
-              <div>{{- entry.abbr -}}</div>
+              <div style="color:#fff !important">{{- entry.abbr -}}</div>
             {% endif %}
           </abbr>
         {% else %}
-          <abbr class="badge rounded w-100">{{ entry.abbr }}</abbr>
+          <abbr class="badge rounded w-100" style="color:#fff !important">
+            <div style="color:#fff !important">{{- entry.abbr -}}</div>
+          </abbr>
         {% endif %}
       {% endif %}
       {% if entry.preview %}
