@@ -64,6 +64,12 @@ on:
 permissions:
   contents: write
 
+# A newer push cancels an older deploy still running, so a slow older build
+# can never overwrite a newer one on the live site.
+concurrency:
+  group: deploy-site-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   deploy:
     # available images: https://github.com/actions/runner-images#available-images
