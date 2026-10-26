@@ -17,7 +17,7 @@ profiles:
       <p>Assistant Professor</p>
       <p>Imperial College London</p>
       <p>s.parbhoo@imperial.ac.uk</p>
-  - align: left
+  - align: right
     image: dominic_marshall.jpg
     content: people_dominic.md
     image_circular: false # crops the image to make it circular
