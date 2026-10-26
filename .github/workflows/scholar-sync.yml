@@ -1,0 +1,66 @@
+name: Sync Google Scholar publications
+
+on:
+  schedule:
+    - cron: "17 5 * * 1" # Mondays 05:17 UTC
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "sync = add new papers; dry-run = only log; mark-all-seen = record current profile, add nothing"
+        type: choice
+        options: [sync, dry-run, mark-all-seen]
+        default: sync
+
+permissions:
+  contents: write
+  actions: write # needed to start the deploy workflow
+
+concurrency:
+  group: scholar-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4
+
+      - name: Fetch new publications
+        env:
+          SERPAPI_API_KEY: ${{ secrets.SERPAPI_API_KEY }} # optional fallback
+        run: |
+          case "${{ github.event.inputs.mode || 'sync' }}" in
+            dry-run)       python bin/scholar_sync.py --dry-run ;;
+            mark-all-seen) python bin/scholar_sync.py --mark-all-seen ;;
+            *)             python bin/scholar_sync.py ;;
+          esac
+
+      - name: Commit changes
+        id: commit
+        run: |
+          git add _bibliography/papers.bib _bibliography/.scholar_seen.json
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Sync publications from Google Scholar"
+          git push
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      # Pushes made with GITHUB_TOKEN do not trigger other workflows,
+      # so start the deploy explicitly.
+      - name: Redeploy site
+        if: steps.commit.outputs.changed == 'true' && github.event.inputs.mode != 'mark-all-seen'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run deploy.yml --ref "${{ github.ref_name }}"
