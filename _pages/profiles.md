@@ -32,6 +32,13 @@ profiles:
       <p>PhD student</p>
       <p>Imperial College London</p>
   - align: right
+    image: nikita_narayanan.jpg
+    content: people_nikita.md
+    image_circular: false # crops the image to make it circular
+    more_info: >
+      <p>PhD student</p>
+      <p>Imperial College London</p>
+  - align: right
     image: elizaveta_sheremetyeva.jpg
     content: people_elizaveta.md
     image_circular: false # crops the image to make it circular
