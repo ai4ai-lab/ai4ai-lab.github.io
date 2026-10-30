@@ -32,7 +32,7 @@ ninja.data = [{
           },
         },{id: "nav-talks",
           title: "Talks",
-          description: "Invited talks by members of the AI4AI Lab.",
+          description: "Invited talks, seminars and panels by Sonali Parbhoo.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/ai4ai.github.io/talks/";
