@@ -256,17 +256,7 @@
   }
 }
 
-// Light mode shows the purple logo; dark mode shows the blue one with white text
-.navbar .navbar-brand.lab-logo .logo-dark {
-  display: none;
-}
-
-html[data-theme="dark"] .navbar .navbar-brand.lab-logo {
-  .logo-light {
-    display: none;
-  }
-
-  .logo-dark {
-    display: block;
-  }
+// Dark mode: turn the logo's black text white, keep the orange
+html[data-theme="dark"] .navbar .navbar-brand.lab-logo img {
+  filter: invert(1) hue-rotate(180deg);
 }
