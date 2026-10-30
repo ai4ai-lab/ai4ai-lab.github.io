@@ -12,7 +12,7 @@
 # AI4AI publication label colours (keys must match the abbr field in papers.bib)
 #   green  = preprints
 #   orange = healthcare and medical venues
-#   blue    = ICML, NeurIPS, ICLR, JAIR, AISTATS, UAI
+#   blue    = ICML, NeurIPS, ICLR, JAIR, AISTATS, UAI, AAAI, NeurIPS Workshop
 #   purple  = other machine learning venues (site theme purple)
 # ---------------------------------------------------------------------------
 
@@ -43,19 +43,19 @@
 "BMJ HCI": { color: "#f29105" }
 "JAIDS": { color: "#f29105" }
 
-# Machine learning (blue: ICML, NeurIPS, ICLR, JAIR, AISTATS, UAI; purple: the rest)
+# Machine learning (blue: ICML, NeurIPS, ICLR, JAIR, AISTATS, UAI, AAAI, NeurIPS Workshop; purple: the rest)
 "ICLR": { color: "#00369f" }
 "ICLR Workshop": { color: "#b509ac" }
 "ICML": { color: "#00369f" }
 "ICML Workshop": { color: "#b509ac" }
 "NeurIPS": { color: "#00369f" }
-"NeurIPS Workshop": { color: "#b509ac" }
+"NeurIPS Workshop": { color: "#00369f" }
 "TMLR": { color: "#b509ac" }
 "JMLR": { color: "#b509ac" }
 "JAIR": { color: "#00369f" }
 "AISTATS": { color: "#00369f" }
 "UAI": { color: "#00369f" }
-"AAAI": { color: "#b509ac" }
+"AAAI": { color: "#00369f" }
 "IJCAI": { color: "#b509ac" }
 "COLM": { color: "#b509ac" }
 "RLC": { color: "#b509ac" }
