@@ -273,14 +273,11 @@ html[data-theme="dark"] .navbar .navbar-brand.lab-logo {
   display: none;
 }
 
-// Every figure sits in the same 16:9 box. The image is scaled to fit inside it
-// (never cropped or enlarged), with white filling any leftover space.
+// Every figure is cropped to the same 2:1 shape, so the boxes match.
 .selected-papers .preview {
   width: 100%;
-  aspect-ratio: 16 / 9;
-  object-fit: contain;
-  object-position: center;
+  aspect-ratio: 2 / 1;
+  object-fit: cover;
   background: #fff;
-  padding: 2px;
   margin-top: 0.25rem;
 }
