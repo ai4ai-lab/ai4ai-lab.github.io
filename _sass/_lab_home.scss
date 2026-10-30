@@ -243,3 +243,20 @@
     }
   }
 }
+
+// Lab logo in the top bar
+.navbar .navbar-brand.lab-logo {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+
+  img {
+    display: block;
+    height: 40px;
+    width: auto;
+  }
+}
+
+// Dark mode: turn the logo's black text white, keep the orange
+html[data-theme="dark"] .navbar .navbar-brand.lab-logo img {
+  filter: invert(1) hue-rotate(180deg);
+}
