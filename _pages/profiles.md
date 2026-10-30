@@ -10,7 +10,7 @@ profiles:
   # To add a lab member, copy the block below, change the image and content file,
   # and create the content file inside _pages/ (see people_sonali.md).
   - align: right
-    image: sonali_parbhoo.jpg
+    image: sonali_parbhoo_2.jpg
     content: people_sonali.md
     image_circular: false # crops the image to make it circular
     more_info: >
