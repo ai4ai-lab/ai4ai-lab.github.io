@@ -11,7 +11,7 @@
 # ---------------------------------------------------------------------------
 # AI4AI publication label colours (keys must match the abbr field in papers.bib)
 #   green  = preprints
-#   light blue = healthcare and medical venues (dark-mode theme blue)
+#   orange  = healthcare and medical venues
 #   blue    = ICML, NeurIPS, ICLR, JAIR, JMLR, AISTATS, UAI, AAAI, TMLR, RLC, KDD, and ICML, ICLR, NeurIPS and RLC workshops
 #   purple  = other machine learning venues (site theme purple)
 # ---------------------------------------------------------------------------
@@ -22,26 +22,26 @@
 "bioRxiv": { color: "#009f36" }
 
 # Healthcare and medical
-"MLHC": { color: "#2698ba" }
-"ML4H": { color: "#2698ba" }
-"CHIL": { color: "#2698ba" }
-"AMIA": { color: "#2698ba" }
-"npj Digit Med": { color: "#2698ba" }
-"Nat Med": { color: "#2698ba" }
-"Nat Commun": { color: "#2698ba" }
-"Lancet Digit Health": { color: "#2698ba" }
-"Intensive Care Med": { color: "#2698ba" }
-"ICM Exp": { color: "#2698ba" }
-"Crit Care Med": { color: "#2698ba" }
-"AJRCCM": { color: "#2698ba" }
-"ATS": { color: "#2698ba" }
-"ERJ": { color: "#2698ba" }
-"BMC Pulm Med": { color: "#2698ba" }
-"Hum Reprod": { color: "#2698ba" }
-"Anaesthesia": { color: "#2698ba" }
-"Blood": { color: "#2698ba" }
-"BMJ HCI": { color: "#2698ba" }
-"JAIDS": { color: "#2698ba" }
+"MLHC": { color: "#e8710a" }
+"ML4H": { color: "#e8710a" }
+"CHIL": { color: "#e8710a" }
+"AMIA": { color: "#e8710a" }
+"npj Digit Med": { color: "#e8710a" }
+"Nat Med": { color: "#e8710a" }
+"Nat Commun": { color: "#e8710a" }
+"Lancet Digit Health": { color: "#e8710a" }
+"Intensive Care Med": { color: "#e8710a" }
+"ICM Exp": { color: "#e8710a" }
+"Crit Care Med": { color: "#e8710a" }
+"AJRCCM": { color: "#e8710a" }
+"ATS": { color: "#e8710a" }
+"ERJ": { color: "#e8710a" }
+"BMC Pulm Med": { color: "#e8710a" }
+"Hum Reprod": { color: "#e8710a" }
+"Anaesthesia": { color: "#e8710a" }
+"Blood": { color: "#e8710a" }
+"BMJ HCI": { color: "#e8710a" }
+"JAIDS": { color: "#e8710a" }
 
 # Machine learning (blue: ICML, NeurIPS, ICLR, JAIR, JMLR, AISTATS, UAI, AAAI, TMLR, RLC, KDD, ICML/ICLR/NeurIPS/RLC workshops; purple: the rest)
 "ICLR": { color: "#00369f" }
