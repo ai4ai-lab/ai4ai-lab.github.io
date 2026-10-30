@@ -70,13 +70,7 @@ ninja.data = [{
             window.location.href = "/ai4ai.github.io/blog/2025/concept-driven-ope/";
           
         },
-      },{id: "news-two-papers-accepted-to-aistats-2025-topics-include-safe-policy-improvement-and-shortcut-mitigation",
-          title: 'Two papers accepted to AISTATS 2025! Topics include safe policy improvement and shortcut...',
-          description: "",
-          section: "News",},{id: "news-ai4ai-lab-website-launched-explore-our-research-in-trustworthy-ai-for-healthcare",
-          title: 'AI4AI Lab website launched! Explore our research in trustworthy AI for healthcare.',
-          description: "",
-          section: "News",},{id: "news-off-by-a-beat-the-effects-of-temporal-misalignment-in-reinforcement-learning-for-sepsis-treatment-was-accepted-at-npj-digital-medicine",
+      },{id: "news-off-by-a-beat-the-effects-of-temporal-misalignment-in-reinforcement-learning-for-sepsis-treatment-was-accepted-at-npj-digital-medicine",
           title: 'Off by a beat: the effects of temporal misalignment in reinforcement learning for...',
           description: "",
           section: "News",},{id: "news-reproducible-clinical-archetypes-in-acute-respiratory-failure-a-multi-cohort-trajectory-analysis-was-accepted-at-intensive-care-medicine",
