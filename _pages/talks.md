@@ -7,9 +7,9 @@ nav: true
 nav_order: 5
 ---
 
-- **Dharma, Demonstration and the Alignment of Machines**<br>at [Hinduism and AI: A Roundtable](https://deploymentof.ai/events/hinduismAI2026), University of Cambridge, Sep 2026 · [Slides]({{ '/assets/pdf/talks/dharma-alignment-cambridge-2026.pdf' | relative_url }})
+- **Dharma, Demonstration and the Alignment of Machines** · [Slides]({{ '/assets/pdf/talks/dharma-alignment-cambridge-2026.pdf' | relative_url }})<br>at [Hinduism and AI: A Roundtable](https://deploymentof.ai/events/hinduismAI2026), University of Cambridge, Sep 2026
 
-- **Causal Discovery in the Age of Weak Supervision: From Preference Data to Language Model Oracles**<br>at [MCML workshop on causal machine learning](https://mcml.ai/events/2026-08-13-workshop-casual-ml/), Munich, Aug 2026 · [Slides]({{ '/assets/pdf/talks/causal-discovery-weak-supervision-mcml-2026.pdf' | relative_url }})
+- **Causal Discovery in the Age of Weak Supervision: From Preference Data to Language Model Oracles** · [Slides]({{ '/assets/pdf/talks/causal-discovery-weak-supervision-mcml-2026.pdf' | relative_url }})<br>at [MCML workshop on causal machine learning](https://mcml.ai/events/2026-08-13-workshop-casual-ml/), Munich, Aug 2026
 
 - **Interpretability in the Wild: When Explainability Meets Causality and Clinical Reality**<br>at University of Cambridge, Mar 2026
 
