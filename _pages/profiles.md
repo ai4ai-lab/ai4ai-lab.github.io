@@ -14,49 +14,37 @@ profiles:
     content: people_sonali.md
     image_circular: false # crops the image to make it circular
     more_info: >
-      <p>Assistant Professor</p>
-      <p>Imperial College London</p>
-      <p>s.parbhoo@imperial.ac.uk</p>
+      <p><a href="mailto:s.parbhoo@imperial.ac.uk">s.parbhoo@imperial.ac.uk</a></p>
+
   - align: right
     image: dominic_marshall.jpg
     content: people_dominic.md
     image_circular: false # crops the image to make it circular
-    more_info: >
-      <p>MD-PhD student</p>
-      <p>Imperial College London</p>
+
   - align: right
     image: ritam_majumdar.jpg
     content: people_ritam.md
     image_circular: false # crops the image to make it circular
-    more_info: >
-      <p>PhD student</p>
-      <p>Imperial College London</p>
+
   - align: right
     image: nikita_narayanan.jpg
     content: people_nikita.md
     image_circular: false # crops the image to make it circular
-    more_info: >
-      <p>PhD student</p>
-      <p>Imperial College London</p>
+
   - align: right
     image: elizaveta_sheremetyeva.jpg
     content: people_elizaveta.md
     image_circular: false # crops the image to make it circular
-    more_info: >
-      <p>PhD student, AI4Health CDT</p>
-      <p>Imperial College London</p>
+
   - align: right
     image: haoyang_hong.jpg
     content: people_haoyang.md
     image_circular: false # crops the image to make it circular
-    more_info: >
-      <p>PhD student</p>
-      <p>Imperial College London</p>
+
   - align: right
     image: yuxin_wang.jpg
     content: people_yuxin.md
     image_circular: false # crops the image to make it circular
     more_info: >
-      <p>Visiting PhD student</p>
-      <p>LMU Munich</p>
+      <p><a href="mailto:yuxin.wang1@lmu.de">yuxin.wang1@lmu.de</a></p>
 ---

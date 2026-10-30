@@ -1,5 +1,3 @@
 ## Ritam Majumdar
 
-PhD student
-
 Ritam is a third-year PhD student in the Department of Electrical and Electronic Engineering at Imperial College London, supervised by Sonali Parbhoo. His research is in reinforcement learning, with a focus on off-policy evaluation, inverse reinforcement learning, theoretical guarantees and interpretable RL. Before joining Imperial in April 2024, he graduated from the Indian Institute of Technology Guwahati in 2021 with a major in Chemical Engineering and a minor in Mathematics. From August 2021 he was a researcher at the Tata Research Development and Design Centre (TRDDC) in Pune, India, developing foundation models for partial differential equations.
