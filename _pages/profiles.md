@@ -20,26 +20,36 @@ profiles:
     image: dominic_marshall.jpg
     content: people_dominic.md
     image_circular: false # crops the image to make it circular
+    more_info: >
+      <p><a href="mailto:dominic.marshall12@imperial.ac.uk">dominic.marshall12@imperial.ac.uk</a></p>
 
   - align: right
     image: ritam_majumdar.jpg
     content: people_ritam.md
     image_circular: false # crops the image to make it circular
+    more_info: >
+      <p><a href="mailto:r.majumdar24@imperial.ac.uk">r.majumdar24@imperial.ac.uk</a></p>
 
   - align: right
     image: nikita_narayanan.jpg
     content: people_nikita.md
     image_circular: false # crops the image to make it circular
+    more_info: >
+      <p><a href="mailto:nikita.narayanan18@imperial.ac.uk">nikita.narayanan18@imperial.ac.uk</a></p>
 
   - align: right
     image: elizaveta_sheremetyeva.jpg
     content: people_elizaveta.md
     image_circular: false # crops the image to make it circular
+    more_info: >
+      <p><a href="mailto:elizaveta.sheremetyeva@imperial.ac.uk">elizaveta.sheremetyeva@imperial.ac.uk</a></p>
 
   - align: right
     image: haoyang_hong.jpg
     content: people_haoyang.md
     image_circular: false # crops the image to make it circular
+    more_info: >
+      <p><a href="mailto:haoyang.hong22@imperial.ac.uk">haoyang.hong22@imperial.ac.uk</a></p>
 
   - align: right
     image: yuxin_wang.jpg
