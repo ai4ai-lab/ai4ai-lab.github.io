@@ -256,7 +256,14 @@
   }
 }
 
-// Dark mode: turn the logo's black text white, keep the orange
-html[data-theme="dark"] .navbar .navbar-brand.lab-logo img {
-  filter: invert(1) hue-rotate(180deg);
+// Light mode: orange logo. Dark mode: blue logo with white text.
+// The dark logo is hidden inline in the HTML, so it never shows by mistake.
+html[data-theme="dark"] .navbar .navbar-brand.lab-logo {
+  .logo-light {
+    display: none !important;
+  }
+
+  .logo-dark {
+    display: block !important;
+  }
 }

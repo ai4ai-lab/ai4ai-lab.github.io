@@ -19,6 +19,7 @@ $green-color-dark: #009f06 !default;
 $green-color-light: #ddffdd !default;
 $green-color-bright: #11d68b !default;
 $purple-color: #b509ac !default;
+$orange-logo-color: #f95b3d !default; // AI4AI logo orange, light-mode theme colour
 $light-purple-color: color.adjust($purple-color, $lightness: 25%);
 $pink-color: #f92080 !default;
 $pink-color-light: #ffdddd !default;
@@ -34,7 +35,7 @@ $black-color: #000000 !default;
 
 // Theme colors
 
-$code-bg-color-light: rgba($purple-color, 0.05);
+$code-bg-color-light: rgba($orange-logo-color, 0.07);
 $code-bg-color-dark: #2c3237 !default;
 
 // Font awesome location

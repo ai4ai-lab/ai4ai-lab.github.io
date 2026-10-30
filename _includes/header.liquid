@@ -4,7 +4,14 @@
     <div class="container">
       <!-- Lab logo, top left on every page -->
       <a class="navbar-brand lab-logo" href="{{ site.baseurl }}/">
-        <img src="{{ 'assets/img/ai4ai_logo.svg' | relative_url }}" alt="AI4AI Lab: AI for Actionable Impact" height="40">
+        <img class="logo-light" src="{{ 'assets/img/ai4ai_logo.svg' | relative_url }}" alt="AI4AI Lab: AI for Actionable Impact" height="40">
+        <img
+          class="logo-dark"
+          src="{{ 'assets/img/ai4ai_logo_dark.svg' | relative_url }}"
+          alt="AI4AI Lab: AI for Actionable Impact"
+          height="40"
+          style="display: none"
+        >
       </a>
       <!-- Navbar Toggle -->
       <button

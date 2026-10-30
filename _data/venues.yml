@@ -64,3 +64,10 @@
 "CVPR": { color: "#b509ac" }
 "DAGM GCPR": { color: "#b509ac" }
 "CAMLIS": { color: "#b509ac" }
+
+# Labels that previously fell back to the theme colour; kept purple
+"PLOS ONE": { color: "#b509ac" }
+"Entropy": { color: "#b509ac" }
+"IUI": { color: "#b509ac" }
+"PhD Thesis": { color: "#b509ac" }
+"MSc Thesis": { color: "#b509ac" }
