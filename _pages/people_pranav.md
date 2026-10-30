@@ -1,5 +1,5 @@
 ## Pranav Sharma
 
-Pranav is a second-year undergraduate in the Department of Electrical and Electronic Engineering at Imperial College London, where he works on building foundation models for healthcare. He was part of the student team behind ArterialAge, a wearable prototype for earlier detection of heart failure, which reached the global top 10 of the Silicon Labs IoT Challenge 2026 as the highest-placed UK team.
+Pranav is a second-year Electrical and Information Engineering undergraduate at Imperial College London and a Laidlaw Scholar, conducting research under Dr Sonali Parbhoo. Beyond his research, Pranav led Imperial's ArterialAge team in developing a wearable device for cardiovascular risk assessment, becoming UK champions and placing among the global top 10 out of 687 teams at the 2026 Silicon Labs–FPT IoT Challenge. His broader interests lie in translating advances in machine learning into technologies that can make a meaningful real-world impact.
 
 [LinkedIn](https://www.linkedin.com/in/pranav-sharma11/)
