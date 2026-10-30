@@ -199,8 +199,35 @@
       {% if entry.doi %}
         <a href="https://doi.org/{{ entry.doi }}" class="btn btn-sm z-depth-0" role="button">DOI</a>
       {% endif %}
-      {% if entry.arxiv %}
-        <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="btn btn-sm z-depth-0" role="button">arXiv</a>
+      {% comment %}
+        PDF button: the official paper (pdf field) if given, otherwise the arXiv PDF
+        (from the arxiv field or an "arXiv preprint arXiv:ID" journal), otherwise the
+        paper's Google Scholar page. No separate arXiv button, since PDF covers it.
+      {% endcomment %}
+      {% assign arxiv_id = entry.arxiv %}
+      {% if arxiv_id == nil or arxiv_id == '' %}
+        {% assign journal_text = entry.journal | default: '' %}
+        {% if journal_text contains 'arXiv:' %}
+          {% assign arxiv_id = journal_text | split: 'arXiv:' | last | strip %}
+        {% endif %}
+      {% endif %}
+      {% if entry.pdf %}
+        {% if entry.pdf contains '://' %}
+          <a href="{{ entry.pdf }}" class="btn btn-sm z-depth-0" role="button">PDF</a>
+        {% else %}
+          <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">PDF</a>
+        {% endif %}
+      {% elsif arxiv_id and arxiv_id != '' %}
+        <a href="https://arxiv.org/pdf/{{ arxiv_id }}" class="btn btn-sm z-depth-0" role="button">PDF</a>
+      {% elsif entry.google_scholar_id %}
+        <a
+          href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user={{ site.data.socials.scholar_userid }}&citation_for_view={{ site.data.socials.scholar_userid }}:{{ entry.google_scholar_id }}"
+          class="btn btn-sm z-depth-0"
+          role="button"
+          target="_blank"
+          rel="noopener noreferrer"
+          >PDF</a
+        >
       {% endif %}
       {% if entry.bibtex_show %}
         <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
@@ -211,23 +238,6 @@
         {% else %}
           <a href="{{ entry.html | prepend: '/assets/html/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">HTML</a>
         {% endif %}
-      {% endif %}
-      {% if entry.pdf %}
-        {% if entry.pdf contains '://' %}
-          <a href="{{ entry.pdf }}" class="btn btn-sm z-depth-0" role="button">PDF</a>
-        {% else %}
-          <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">PDF</a>
-        {% endif %}
-      {% elsif entry.google_scholar_id %}
-        {% comment %} No PDF file given: link to the paper's Google Scholar page instead. {% endcomment %}
-        <a
-          href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user={{ site.data.socials.scholar_userid }}&citation_for_view={{ site.data.socials.scholar_userid }}:{{ entry.google_scholar_id }}"
-          class="btn btn-sm z-depth-0"
-          role="button"
-          target="_blank"
-          rel="noopener noreferrer"
-          >PDF</a
-        >
       {% endif %}
       {% if entry.supp %}
         {% if entry.supp contains '://' %}
