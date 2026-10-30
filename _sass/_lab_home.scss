@@ -275,5 +275,8 @@ html[data-theme="dark"] .navbar .navbar-brand.lab-logo {
 
 .selected-papers .preview {
   width: 100%;
+  max-height: 110px;
+  object-fit: contain;
+  object-position: left top;
   margin-top: 0.25rem;
 }
