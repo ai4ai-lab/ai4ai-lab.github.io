@@ -70,7 +70,10 @@ ninja.data = [{
             window.location.href = "/ai4ai.github.io/blog/2025/concept-driven-ope/";
           
         },
-      },{id: "news-off-by-a-beat-the-effects-of-temporal-misalignment-in-reinforcement-learning-for-sepsis-treatment-was-accepted-at-npj-digital-medicine",
+      },{id: "news-the-alignment-auditor-a-bayesian-framework-for-verifying-and-refining-llm-objectives-was-presented-at-iclr-2026",
+          title: 'The Alignment Auditor: A Bayesian Framework for Verifying and Refining LLM Objectives was...',
+          description: "",
+          section: "News",},{id: "news-off-by-a-beat-the-effects-of-temporal-misalignment-in-reinforcement-learning-for-sepsis-treatment-was-accepted-at-npj-digital-medicine",
           title: 'Off by a beat: the effects of temporal misalignment in reinforcement learning for...',
           description: "",
           section: "News",},{id: "news-reproducible-clinical-archetypes-in-acute-respiratory-failure-a-multi-cohort-trajectory-analysis-was-accepted-at-intensive-care-medicine",
