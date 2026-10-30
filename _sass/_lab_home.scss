@@ -267,3 +267,13 @@ html[data-theme="dark"] .navbar .navbar-brand.lab-logo {
     display: block !important;
   }
 }
+
+// Paper figures appear only in the home page's selected publications
+.publications:not(.selected-papers) .preview {
+  display: none;
+}
+
+.selected-papers .preview {
+  width: 100%;
+  margin-top: 0.25rem;
+}
