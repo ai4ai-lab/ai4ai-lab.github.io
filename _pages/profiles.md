@@ -61,4 +61,6 @@ profiles:
     image: pranav_sharma.jpg
     content: people_pranav.md
     image_circular: false # crops the image to make it circular
+    more_info: >
+      <p><a href="mailto:pranav.sharma25@imperial.ac.uk">pranav.sharma25@imperial.ac.uk</a></p>
 ---
