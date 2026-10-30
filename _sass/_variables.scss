@@ -19,7 +19,8 @@ $green-color-dark: #009f06 !default;
 $green-color-light: #ddffdd !default;
 $green-color-bright: #11d68b !default;
 $purple-color: #b509ac !default;
-$orange-logo-color: #f95b3d !default; // AI4AI logo orange, light-mode theme colour
+$orange-logo-color: #f95b3d !default; // AI4AI logo orange: logo, buttons, box edges
+$orange-text-color: #c8401f !default; // darker logo orange for links and small text (readable on white)
 $light-purple-color: color.adjust($purple-color, $lightness: 25%);
 $pink-color: #f92080 !default;
 $pink-color-light: #ffdddd !default;

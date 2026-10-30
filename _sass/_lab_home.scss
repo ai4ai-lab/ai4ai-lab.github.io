@@ -81,8 +81,8 @@
 
 .lab-btn-primary.btn {
   color: #fff !important;
-  background: var(--global-theme-color);
-  border-color: var(--global-theme-color);
+  background: var(--lab-accent-color, var(--global-theme-color));
+  border-color: var(--lab-accent-color, var(--global-theme-color));
 
   &:hover {
     color: #fff !important;
@@ -128,7 +128,7 @@
 
 .lab-interest {
   padding: 0.9rem 1rem;
-  border-left: 3px solid var(--global-theme-color);
+  border-left: 3px solid var(--lab-accent-color, var(--global-theme-color));
   background: var(--global-code-bg-color);
   border-radius: 0 6px 6px 0;
 
