@@ -268,13 +268,9 @@ html[data-theme="dark"] .navbar .navbar-brand.lab-logo {
   }
 }
 
-// Paper figures appear only in the home page's selected publications
-.publications:not(.selected-papers) .preview {
-  display: none;
-}
-
-// Every figure is cropped to the same 2:1 shape, so the boxes match.
-.selected-papers .preview {
+// Paper figures: the same 2:1 box under the venue label, on the home page
+// and the Publications tab.
+.publications .preview {
   width: 100%;
   aspect-ratio: 2 / 1;
   object-fit: cover;
