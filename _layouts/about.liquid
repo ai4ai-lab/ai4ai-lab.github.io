@@ -46,7 +46,6 @@ layout: default
     {% if page.announcements and page.announcements.enabled %}
       <div class="lab-section-head">
         <h2 class="lab-section-title">Recent news</h2>
-        <a class="lab-section-link" href="{{ '/news/' | relative_url }}">All news →</a>
       </div>
       {% include news.liquid limit=true %}
     {% endif %}
