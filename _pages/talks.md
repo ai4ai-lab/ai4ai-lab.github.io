@@ -15,17 +15,17 @@ nav_order: 5
 
 - **From Research to Certification with Data-Driven Medical Decision Support Systems**<br>at Dagstuhl Seminar, 2026
 
-- **Fix-A-Shortcut: Gradient-Based Shortcut Mitigation for Causal Representation Learning in Healthcare**<br>at Royal Statistical Society, Emerging Applications invited talk, Dec 2025
+- **Fix-A-Shortcut: Gradient-Based Shortcut Mitigation for Causal Representation Learning in Healthcare** · [Slides]({{ '/assets/pdf/talks/fix-a-shortcut-rss-2025.pdf' | relative_url }})<br>at Royal Statistical Society, Emerging Applications invited talk, Dec 2025
 
 - **The Pitfalls of Shortcuts in Multimodal Representation Learning for Healthcare**<br>at NeurIPS 2025 workshop on ML for Multimodal Representation Learning in Healthcare, Dec 2025
 
-- **Mind Your Evaluation: On the Challenges with Off-Policy Evaluation for Real World Decision-Making**<br>at University of Oxford, 2025<br>at EPFL, 2025<br>at RLC I Can't Believe It's Not Better Workshop, 2024<br>at CIFAR Workshop on World Models: Causality, Neuroscience and AI Safety, Max Planck Institute, Tübingen, 2024<br>at Novel Trends in Data Science Workshop, ETH Zurich, 2023<br>at Open Data Science Conference, London, 2023
+- **Mind Your Evaluation: On the Challenges with Off-Policy Evaluation for Real World Decision-Making** · [Slides]({{ '/assets/pdf/talks/mind-your-evaluation-rlc-2024.pdf' | relative_url }})<br>at University of Oxford, 2025<br>at EPFL, 2025<br>at RLC I Can't Believe It's Not Better Workshop, 2024<br>at CIFAR Workshop on World Models: Causality, Neuroscience and AI Safety, Max Planck Institute, Tübingen, 2024<br>at Novel Trends in Data Science Workshop, ETH Zurich, 2023<br>at Open Data Science Conference, London, 2023
 
 - **Insights from the Inverse: Leveraging Inverse Reinforcement Learning for Reconstructing LLM Training Goals**<br>at Google DeepMind, 2025
 
 - **On the Promises of Data-Driven Approaches for Early Glaucoma Detection**<br>at Aravind Eye Institute, Madurai, 2024
 
-- **Taking the Genie Out Of The Bottle(neck): Concept-Based Insights for AI Oversight**<br>at KDD Workshop on Interpretability, 2024
+- **Taking the Genie Out Of The Bottle(neck): Concept-Based Insights for AI Oversight** · [Slides]({{ '/assets/pdf/talks/genie-bottleneck-kdd-2024.pdf' | relative_url }})<br>at KDD Workshop on Interpretability, 2024
 
 - **Interpretable Reinforcement Learning for Actionable Decision-Making in Healthcare**<br>at RLC InterpPol Workshop, 2024
 
