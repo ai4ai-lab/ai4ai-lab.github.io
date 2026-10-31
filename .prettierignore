@@ -21,3 +21,4 @@ _layouts/**/*.liquid
 backup/**
 INSTALL.md
 assets/json/resume.json
+_bibliography/.thumbnail_skipped.json
