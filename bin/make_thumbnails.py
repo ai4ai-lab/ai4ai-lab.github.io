@@ -163,22 +163,15 @@ def text_blocks(page):
     return [(pymupdf.Rect(b[:4]), b[4]) for b in page.get_text("blocks") if b[6] == 0]
 
 
-def is_body_text(rect, text, page):
-    """A paragraph of running text, which a figure region should not swallow."""
-    words = len(text.split())
-    return words > 45 and rect.width > 0.3 * page.rect.width
-
-
-def figure_above_caption(page, cap):
-    """Union of the graphics directly above a caption, within its column."""
-    pr = page.rect
-    allg = graphics(page)
-    near = [r for r in allg if -4 <= cap.y0 - r.y1 < 80]
-    span = (max(r.x1 for r in near) - min(r.x0 for r in near)) if near else 0
-    full_width = cap.width > 0.55 * pr.width or span > 0.6 * pr.width
-    left, right = (pr.x0, pr.x1) if full_width else (cap.x0 - 15, cap.x1 + 15)
-    cands = [r for r in allg
-             if r.y1 <= cap.y0 + 4 and r.x1 > left and r.x0 < right]
+def _region(page, cap, left, right, allg, blocks):
+    """Graphics above the caption, between left and right, below any text above."""
+    ceiling = page.rect.y0
+    for rect, text in blocks:
+        if rect.y1 <= cap.y0 - 2 and rect.x1 > left + 5 and rect.x0 < right - 5:
+            if CAPTION_ANY.match(text) or len(text.split()) > 30:
+                ceiling = max(ceiling, rect.y1)
+    cands = [r for r in allg if r.y1 <= cap.y0 + 4 and r.y0 >= ceiling - 2
+             and r.x0 >= left - 5 and r.x1 <= right + 5]
     if not cands:
         return None
     cands.sort(key=lambda r: cap.y0 - r.y1)
@@ -189,23 +182,39 @@ def figure_above_caption(page, cap):
     while grew:
         grew = False
         for r in cands:
-            if r in region:
-                continue
-            if r.y1 >= region.y0 - 30 and r.x1 > left and r.x0 < right:
+            if r not in region and r.y1 >= region.y0 - 30:
                 region |= r
                 grew = True
-    # don't let the region climb into body paragraphs
-    for rect, text in text_blocks(page):
-        if is_body_text(rect, text, page) and rect.y1 < cap.y0 and rect.intersects(region):
-            if rect.y1 < region.y1:
-                region.y0 = max(region.y0, rect.y1 + 2)
     # include labels sitting on the figure's edges
-    for rect, text in text_blocks(page):
-        if not is_body_text(rect, text, page) and rect.intersects(region + (-8, -8, 8, 8)) \
-                and rect.y1 <= cap.y0 + 1 and not CAPTION_ANY.match(text):
+    for rect, text in blocks:
+        if (rect.intersects(region + (-8, -8, 8, 8)) and rect.y0 >= ceiling - 1
+                and rect.y1 <= cap.y0 + 1 and len(text.split()) <= 30
+                and not CAPTION_ANY.match(text) and rect.x0 >= left - 5 and rect.x1 <= right + 5):
             region |= rect
     region.y1 = min(region.y1, cap.y0 - 1)  # never include the caption itself
     return region if region.width > 60 and region.height > 40 else None
+
+
+def figure_above_caption(page, cap):
+    """The figure directly above a caption: full page width or the caption's column."""
+    pr = page.rect
+    allg = graphics(page)
+    blocks = text_blocks(page)
+    near = [r for r in allg if -4 <= cap.y0 - r.y1 < 80]
+    span = (max(r.x1 for r in near) - min(r.x0 for r in near)) if near else 0
+    column = (cap.x0 - 15, cap.x1 + 15)
+    if cap.width > 0.55 * pr.width or span > 0.6 * pr.width:
+        region = _region(page, cap, pr.x0, pr.x1, allg, blocks)
+        if region:
+            # a full-width crop must not swallow another caption or a paragraph
+            clash = any(rect.intersects(region) and rect != cap and
+                        (CAPTION_ANY.match(text) or len(text.split()) > 30)
+                        for rect, text in blocks)
+            if not clash:
+                return region
+    if cap.width > 0.55 * pr.width:
+        return None
+    return _region(page, cap, column[0], column[1], allg, blocks)
 
 
 def find_figure_1(doc):
