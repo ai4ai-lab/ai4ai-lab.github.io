@@ -32,10 +32,15 @@ import urllib.request
 from pathlib import Path
 
 try:
-    import pymupdf
-except ImportError:  # older PyMuPDF
-    import fitz as pymupdf
-from PIL import Image
+    try:
+        import pymupdf
+    except ImportError:  # older PyMuPDF
+        import fitz as pymupdf
+    from PIL import Image
+except ImportError:
+    sys.exit("This script needs PyMuPDF and Pillow. Install them with:\n"
+             "    python3 -m pip install --user pymupdf pillow\n"
+             "(if pip says the environment is externally managed, add --break-system-packages)")
 
 ROOT = Path(__file__).resolve().parent.parent
 BIB = ROOT / "_bibliography" / "papers.bib"
