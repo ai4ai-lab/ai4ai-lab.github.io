@@ -29,15 +29,15 @@ nav_order: 5
 
 - **Interpretable Reinforcement Learning for Actionable Decision-Making in Healthcare**<br>at RLC InterpPol Workshop, 2024
 
-- **Lessons from the Past for Smarter Decisions and Future Wins**<br>at Microsoft Research Cambridge, 2024
+- **Lessons from the Past for Smarter Decisions and Future Wins** · [Slides]({{ '/assets/pdf/talks/lessons-from-the-past-msr-2024.pdf' | relative_url }})<br>at Microsoft Research Cambridge, 2024
 
-- **Insights from the Inverse: Leveraging Inverse Reinforcement Learning for Actionable Decision-Making in Healthcare**<br>at Apple Healthcare Workshop, Mountain View, 2024
+- **Insights from the Inverse: Leveraging Inverse Reinforcement Learning for Actionable Decision-Making in Healthcare** · [Slides]({{ '/assets/pdf/talks/insights-from-the-inverse-apple-2024.pdf' | relative_url }})<br>at Apple Healthcare Workshop, Mountain View, 2024
 
 - **Larger Models are Not Always Better: Towards Creating ML People Can Use in Practice**<br>at ISN Tea, Imperial College London, 2024
 
 - **When Information Is Not Enough: Towards Uncertainty-Aware Real Time Decisions for Health**<br>at Critical Care Summit and Datathon, Tarragona, 2022
 
-- **Help, I Need Somebody! Deferring to Humans for Sequential Decision-Making in Uncertainty**<br>at Boston Consulting Group, 2022
+- **Help, I Need Somebody! Deferring to Humans for Sequential Decision-Making in Uncertainty** · [Slides]({{ '/assets/pdf/talks/help-i-need-somebody-bcg-2022.pdf' | relative_url }})<br>at Boston Consulting Group, 2022
 
 - **On Addressing Bias and Uncertainty in Machine Learning for Equity in Healthcare**<br>at DSxHE, University College London, 2022
 
