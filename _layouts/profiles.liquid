@@ -34,5 +34,24 @@ layout: page
         </div>
       {% endfor %}
     {% endif %}
+
+    {% if site.data.alumni %}
+      <hr>
+      <section class="lab-alumni">
+        <h2>Alumni</h2>
+        <div class="lab-alumni-groups">
+          {% for g in site.data.alumni %}
+            <div class="lab-alumni-group">
+              <h3>{{ g.group }} students</h3>
+              <ul>
+                {% for name in g.people %}
+                  <li>{{ name }}</li>
+                {% endfor %}
+              </ul>
+            </div>
+          {% endfor %}
+        </div>
+      </section>
+    {% endif %}
   </article>
 </div>

@@ -1,0 +1,35 @@
+# Lab alumni, shown at the bottom of the Team page.
+# To add someone, add a line under the right group.
+- group: MSc
+  people:
+    - Arjun Jagota
+    - Jack Teversham
+    - Ioanna Papanikolaou
+    - Haoyang Hong
+    - Jared Joselowitz
+    - Nyal Patel
+    - Aaman Rebello
+    - Jean Durand
+    - Angelos Ragkousis
+    - Ginevra Cepparulo
+    - Cesare Bergossi
+    - Harel Lidar
+    - Dorijan Donaj Magasic
+    - Lakshmipriya Subramonian
+    - Gia Croock
+    - Rael Ware
+    - Federico Mandelli
+    - Nicholas Scheurenbrand
+    - Justin Mak
+
+- group: MEng
+  people:
+    - Kelvin Mang
+    - Chang Liu
+    - Shreya Kamath
+    - Indiradharshini Thanigaikumar
+    - Pengyuan Shao
+    - Martin Easterbrook
+    - Jay Mistry
+    - Sriyesh Bogadapati
+    - Irene Paloanda
