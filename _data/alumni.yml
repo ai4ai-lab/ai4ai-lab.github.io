@@ -1,5 +1,12 @@
 # Lab alumni, shown at the bottom of the Team page.
 # To add someone, add a line under the right group.
+- group: BEng
+  people:
+    - Yujun Han
+    - Yash Rajput
+    - Anish Narain
+    - Harshil Shah
+
 - group: MEng
   people:
     - Kelvin Mang
@@ -33,10 +40,3 @@
     - Federico Mandelli
     - Nicholas Scheurenbrand
     - Justin Mak
-
-- group: BEng
-  people:
-    - Yujun Han
-    - Yash Rajput
-    - Anish Narain
-    - Harshil Shah
