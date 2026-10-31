@@ -1,42 +1,42 @@
 # Lab alumni, shown at the bottom of the Team page.
-# To add someone, add a line under the right group.
+# To add someone, add a line under the right group (sorted by surname).
 - group: BEng
   people:
     - Yujun Han
-    - Yash Rajput
     - Anish Narain
+    - Yash Rajput
     - Harshil Shah
 
 - group: MEng
   people:
-    - Kelvin Mang
-    - Chang Liu
-    - Shreya Kamath
-    - Indiradharshini Thanigaikumar
-    - Pengyuan Shao
-    - Martin Easterbrook
-    - Jay Mistry
     - Sriyesh Bogadapati
+    - Martin Easterbrook
+    - Shreya Kamath
+    - Chang Liu
+    - Kelvin Mang
+    - Jay Mistry
     - Irene Palaonda
+    - Pengyuan Shao
+    - Indiradharshini Thanigaikumar
 
 - group: MSc
   people:
-    - Arjun Jagota
-    - Jack Teversham
-    - Ioanna Papanikolaou
-    - Haoyang Hong
-    - Jared Joselowitz
-    - Nyal Patel
-    - Aaman Rebello
-    - Jean Durand
-    - Angelos Ragkousis
-    - Ginevra Cepparulo
     - Cesare Bergossi
+    - Ginevra Cepparulo
+    - Gia Croock
+    - Jean Durand
+    - Haoyang Hong
+    - Arjun Jagota
+    - Jared Joselowitz
     - Harel Lidar
     - Dorijan Donaj Magasic
-    - Lakshmipriya Subramonian
-    - Gia Croock
-    - Rael Ware
-    - Federico Mandelli
-    - Nicholas Scheurenbrand
     - Justin Mak
+    - Federico Mandelli
+    - Ioanna Papanikolaou
+    - Nyal Patel
+    - Angelos Ragkousis
+    - Aaman Rebello
+    - Nicholas Scheurenbrand
+    - Lakshmipriya Subramonian
+    - Jack Teversham
+    - Rael Ware
