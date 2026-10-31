@@ -312,13 +312,16 @@ html[data-theme="dark"] .navbar .navbar-brand.lab-logo {
   }
 }
 
-// Contact icons under an email address on the Team page
+// Contact icons beside a name on the Team page
 .people-icons {
-  font-size: 1.9rem;
+  font-size: 1.5rem;
+  margin-left: 0.6rem;
+  vertical-align: middle;
+  white-space: nowrap;
 
   a {
     color: var(--global-text-color);
-    margin-right: 0.6rem;
+    margin-right: 0.5rem;
 
     &:hover {
       color: var(--global-theme-color);
