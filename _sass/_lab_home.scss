@@ -312,20 +312,12 @@ html[data-theme="dark"] .navbar .navbar-brand.lab-logo {
   }
 }
 
-// Contact icons beside an email address on the Team page
-.people-icons {
-  font-size: 1.2rem;
-  margin-left: 0.5rem;
-  vertical-align: middle;
-  white-space: nowrap;
+// A name on the Team page that links to the person's profile
+.people-name-link {
+  color: inherit;
 
-  a {
-    color: var(--global-text-color);
-    margin-right: 0.5rem;
-
-    &:hover {
-      color: var(--global-theme-color);
-      text-decoration: none;
-    }
+  &:hover {
+    color: var(--global-theme-color);
+    text-decoration: none;
   }
 }
