@@ -311,3 +311,18 @@ html[data-theme="dark"] .navbar .navbar-brand.lab-logo {
     columns: 1;
   }
 }
+
+// Contact icons under an email address on the Team page
+.people-icons {
+  font-size: 1.9rem;
+
+  a {
+    color: var(--global-text-color);
+    margin-right: 0.6rem;
+
+    &:hover {
+      color: var(--global-theme-color);
+      text-decoration: none;
+    }
+  }
+}
