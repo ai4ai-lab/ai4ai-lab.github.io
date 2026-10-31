@@ -15,6 +15,7 @@ profiles:
     image_circular: false # crops the image to make it circular
     more_info: >
       <p><a href="mailto:s.parbhoo@ic.ac.uk">s.parbhoo@ic.ac.uk</a></p>
+      <p><a href="https://scholar.google.com/citations?user=FwEz5s4AAAAJ">Google Scholar</a></p>
 
   - align: right
     image: dominic_marshall.jpg

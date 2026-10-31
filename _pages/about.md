@@ -7,7 +7,7 @@ subtitle: <a href='https://www.imperial.ac.uk/engineering/departments/electrical
 hero: true # home page layout: photo, lab intro, news, then team
 team: true # shows the team section below the news
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+social: false # contact links are on the Team page instead
 
 announcements:
   enabled: true # includes a list of news items
