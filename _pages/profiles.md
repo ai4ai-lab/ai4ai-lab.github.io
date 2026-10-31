@@ -14,7 +14,7 @@ profiles:
     content: people_sonali.md
     image_circular: false # crops the image to make it circular
     more_info: >
-      <p><a href="mailto:s.parbhoo@ic.ac.uk">s.parbhoo@ic.ac.uk</a></p>
+      <p><a href="mailto:s.parbhoo@ic.ac.uk">s.parbhoo@ic.ac.uk</a> <span class="people-icons"><a href="https://scholar.google.com/citations?user=FwEz5s4AAAAJ" title="Google Scholar"><i class="ai ai-google-scholar"></i></a><a href="mailto:sp.ai4ai.lab@gmail.com" title="Lab email"><i class="fa-solid fa-envelope"></i></a></span></p>
 
   - align: right
     image: dominic_marshall.jpg
