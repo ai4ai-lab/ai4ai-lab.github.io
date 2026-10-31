@@ -1,5 +1,17 @@
 # Lab alumni, shown at the bottom of the Team page.
 # To add someone, add a line under the right group.
+- group: MEng
+  people:
+    - Kelvin Mang
+    - Chang Liu
+    - Shreya Kamath
+    - Indiradharshini Thanigaikumar
+    - Pengyuan Shao
+    - Martin Easterbrook
+    - Jay Mistry
+    - Sriyesh Bogadapati
+    - Irene Paloanda
+
 - group: MSc
   people:
     - Arjun Jagota
@@ -21,15 +33,3 @@
     - Federico Mandelli
     - Nicholas Scheurenbrand
     - Justin Mak
-
-- group: MEng
-  people:
-    - Kelvin Mang
-    - Chang Liu
-    - Shreya Kamath
-    - Indiradharshini Thanigaikumar
-    - Pengyuan Shao
-    - Martin Easterbrook
-    - Jay Mistry
-    - Sriyesh Bogadapati
-    - Irene Paloanda
