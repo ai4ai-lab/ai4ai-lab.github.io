@@ -447,3 +447,25 @@ html[data-theme="dark"] .navbar .navbar-brand.lab-logo {
     margin: 0 0 0.35rem;
   }
 }
+
+// Lab logo in place of the lab name on the home page
+.lab-name-logo {
+  margin: 0 0 0.75rem;
+
+  img {
+    display: block;
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+  }
+}
+
+html[data-theme="dark"] .lab-name-logo {
+  .logo-light {
+    display: none !important;
+  }
+
+  .logo-dark {
+    display: block !important;
+  }
+}
