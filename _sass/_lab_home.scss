@@ -155,8 +155,14 @@
   }
 }
 
+.lab-q {
+  font-weight: 600;
+  color: var(--global-theme-color);
+}
+
 .lab-q-topics {
   color: var(--global-text-color-light);
+  font-style: italic;
 }
 
 .lab-join {

@@ -41,9 +41,9 @@ latest_posts:
   <h2 class="lab-section-title">Research</h2>
   <p>We work on three central questions:</p>
   <ul class="lab-questions">
-    <li>How can humans and AI work together for consequential decisions? <span class="lab-q-topics">(learning to defer, concept-based models, inverse reinforcement learning)</span></li>
-    <li>How do we interact with the environment, while avoiding risk but learning as quickly as possible? <span class="lab-q-topics">(meta-learning, Bayesian optimisation, model selection, uncertainty quantification)</span></li>
-    <li>How should AI act when its decisions change the world it learns from? <span class="lab-q-topics">(off-policy evaluation, distribution shift, continual learning, causal discovery, causal inference and experimental design)</span></li>
+    <li><span class="lab-q">How can humans and AI work together for consequential decisions?</span> <span class="lab-q-topics">(learning to defer, concept-based models, inverse reinforcement learning)</span></li>
+    <li><span class="lab-q">How do we interact with the environment, while avoiding risk but learning as quickly as possible?</span> <span class="lab-q-topics">(meta-learning, Bayesian optimisation, model selection, uncertainty quantification)</span></li>
+    <li><span class="lab-q">How should AI act when its decisions change the world it learns from?</span> <span class="lab-q-topics">(off-policy evaluation, distribution shift, continual learning, causal discovery, causal inference and experimental design)</span></li>
   </ul>
   <p>These questions are relevant for small-data decision-making (e.g. clinical decision systems) and for large-scale foundation models.</p>
   <p class="lab-join">
