@@ -61,7 +61,4 @@ latest_posts:
     <li><span class="lab-tag">C</span> <span class="lab-q">How should AI act when its decisions change the world it learns from?</span> <span class="lab-q-topics">(off-policy evaluation, distribution shift, continual learning, causal discovery, causal inference and experimental design)</span></li>
   </ul>
   <p>These questions are relevant for small-data decision-making (e.g. clinical decision systems) and for large-scale foundation models.</p>
-  <p class="lab-join">
-    <b>Join us:</b> we are looking for PhD students interested in reinforcement learning, causal inference, Bayesian methods and interpretability with applications to healthcare. Contact <a href="mailto:sp.ai4ai.lab@gmail.com">sp.ai4ai.lab@gmail.com</a>.
-  </p>
 </section>
