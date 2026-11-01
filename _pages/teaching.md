@@ -9,7 +9,7 @@ nav_order: 6
 
 ### Machine Learning
 
-**ELEC60019, Autumn 2026/2027**
+**ELEC60019/ELEC70059, Autumn 2026/2027**
 
 Machine learning underpins technologies from medical diagnosis and autonomous systems to large language models. These systems rest on a common set of ideas: how a model learns from data, why it generalises beyond its training examples, and what goes wrong when it does not. This course teaches those ideas in depth, so that you can understand, assess and build on modern methods rather than only use them.
 
