@@ -2,7 +2,7 @@
 layout: page
 permalink: /teaching/
 title: Teaching
-description: Courses taught by members of the AI4AI Lab at Imperial College London.
+description: Courses taught by Sonali Parbhoo at Imperial College London.
 nav: true
 nav_order: 6
 ---
