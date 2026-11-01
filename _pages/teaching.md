@@ -2,7 +2,7 @@
 layout: page
 permalink: /teaching/
 title: Teaching
-description: Courses taught by Sonali Parbhoo at Imperial College London.
+description:
 nav: true
 nav_order: 6
 ---
