@@ -145,13 +145,63 @@
   }
 }
 
-.lab-questions {
-  padding-left: 1.2rem;
+// Logo beside the research questions
+.lab-logo-explainer {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 2rem;
+  align-items: center;
   margin-bottom: 1rem;
+}
+
+.lab-mark img {
+  width: 100%;
+  height: auto;
+}
+
+html[data-theme="dark"] .lab-mark {
+  .logo-light {
+    display: none !important;
+  }
+
+  .logo-dark {
+    display: block !important;
+  }
+}
+
+.lab-questions {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
 
   li {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
     line-height: 1.55;
+  }
+}
+
+.lab-tag {
+  display: inline-block;
+  min-width: 1.9rem;
+  padding: 0 0.45rem;
+  margin-right: 0.3rem;
+  border: 1.5px solid var(--global-theme-color);
+  border-radius: 1rem;
+  color: var(--global-theme-color);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.4rem;
+}
+
+@media (max-width: 768px) {
+  .lab-logo-explainer {
+    grid-template-columns: 1fr;
+
+    .lab-mark {
+      max-width: 180px;
+      margin: 0 auto;
+    }
   }
 }
 
