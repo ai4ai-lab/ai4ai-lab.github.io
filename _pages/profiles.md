@@ -15,6 +15,7 @@ profiles:
     image_circular: false # crops the image to make it circular
     more_info: >
       <p><a href="mailto:s.parbhoo@ic.ac.uk">s.parbhoo@ic.ac.uk</a></p>
+      <p>1017, Electrical Engineering<br>South Kensington Campus<br>United Kingdom</p>
 
   - align: right
     image: dominic_marshall.jpg
