@@ -145,6 +145,20 @@
   }
 }
 
+.lab-questions {
+  padding-left: 1.2rem;
+  margin-bottom: 1rem;
+
+  li {
+    margin-bottom: 0.5rem;
+    line-height: 1.55;
+  }
+}
+
+.lab-q-topics {
+  color: var(--global-text-color-light);
+}
+
 .lab-join {
   margin-top: 1.25rem;
   font-size: 0.95rem;

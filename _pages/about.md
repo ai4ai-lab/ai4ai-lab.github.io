@@ -28,7 +28,7 @@ latest_posts:
     <p class="lab-expansion">AI for Actionable Impact</p>
     <p class="lab-affil">{{ page.subtitle }}</p>
     <p class="lab-lede">
-      We are a machine learning research group at Imperial College London. We develop trustworthy methods for high-stakes decision-making, with a focus on healthcare: models that support clinical decisions, are honest about what they do not know, and can be safely deployed.
+      The AI4AI Lab (AI for Actionable Impact) is a machine learning research group at Imperial College London. We build AI that people can act on: models whose outputs can be used to make real decisions in high-stakes settings.
     </p>
     <div class="lab-cta">
       <a class="btn lab-btn lab-btn-primary" href="{{ '/people/' | relative_url }}">Meet the team</a>
@@ -38,29 +38,14 @@ latest_posts:
 </section>
 
 <section class="lab-interests">
-  <h2 class="lab-section-title">Research interests</h2>
-  <div class="lab-interest-grid">
-    <div class="lab-interest">
-      <b>Reinforcement learning and safe RL</b>
-      <span>Off-policy evaluation, decision-focused learning, and safe policy improvement for sequential medical decisions.</span>
-    </div>
-    <div class="lab-interest">
-      <b>Causal inference</b>
-      <span>Counterfactual reasoning, causal discovery, and causal Bayesian optimisation.</span>
-    </div>
-    <div class="lab-interest">
-      <b>Interpretability</b>
-      <span>Concept bottleneck models, feature importance, and guarantee regions for local explanations.</span>
-    </div>
-    <div class="lab-interest">
-      <b>Bayesian methods</b>
-      <span>Uncertainty quantification and robust inference for medical applications.</span>
-    </div>
-    <div class="lab-interest">
-      <b>Healthcare AI</b>
-      <span>Critical care (ARDS), HIV treatment, and clinical decision support.</span>
-    </div>
-  </div>
+  <h2 class="lab-section-title">Research</h2>
+  <p>We work on three central questions:</p>
+  <ul class="lab-questions">
+    <li>How should people and AI share consequential decisions? <span class="lab-q-topics">(learning to defer, interpretability, concept-based models, inverse reinforcement learning)</span></li>
+    <li>How do we know whether a decision policy can be trusted before it is used? <span class="lab-q-topics">(off-policy evaluation, causal inference, uncertainty quantification)</span></li>
+    <li>How should AI act when its decisions change the world it learns from? <span class="lab-q-topics">(sequential decision-making, distribution shift, continual learning, causal discovery and experimental design)</span></li>
+  </ul>
+  <p>These questions arise wherever decisions unfold over time from imperfect data and are relevant for small-data decision-making (e.g. clinical decision systems) and for large-scale foundation models.</p>
   <p class="lab-join">
     <b>Join us:</b> we are looking for PhD students interested in reinforcement learning, causal inference, Bayesian methods and interpretability with applications to healthcare. Contact <a href="mailto:sp.ai4ai.lab@gmail.com">sp.ai4ai.lab@gmail.com</a>.
   </p>
