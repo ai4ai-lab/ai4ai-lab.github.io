@@ -32,7 +32,7 @@ ninja.data = [{
           },
         },{id: "nav-teaching",
           title: "Teaching",
-          description: "Materials for courses you taught. Replace this text with your description.",
+          description: "Courses taught by members of the AI4AI Lab at Imperial College London.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/teaching/";
