@@ -28,7 +28,6 @@ latest_posts:
       <img class="logo-light" src="{{ 'assets/img/ai4ai_logo.svg' | relative_url }}" alt="AI4AI Lab: AI for Actionable Impact" width="230" style="width: 230px; max-width: 100%; height: auto">
       <img class="logo-dark" src="{{ 'assets/img/ai4ai_logo_dark.svg' | relative_url }}" alt="AI4AI Lab: AI for Actionable Impact" width="230" style="display: none; width: 230px; max-width: 100%; height: auto">
     </h1>
-    <p class="lab-affil">{{ page.subtitle }}</p>
     <p class="lab-lede">
       The AI4AI Lab (AI for Actionable Impact) is a machine learning research group at Imperial College London. We build AI that people can act on: models whose outputs can be used to make real decisions in high-stakes settings.
     </p>
