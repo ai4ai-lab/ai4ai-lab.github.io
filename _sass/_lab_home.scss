@@ -169,6 +169,50 @@ html[data-theme="dark"] .lab-mark {
   }
 }
 
+// Cornerstone legend beside the logo, styled after a keyword row
+.lab-legend {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.75rem;
+  padding: 1rem 0;
+  border-top: 1px solid var(--global-divider-color);
+  border-bottom: 1px solid var(--global-divider-color);
+  margin-bottom: 1rem;
+
+  > div {
+    font-size: 0.85rem;
+    padding: 0.5rem 0.6rem;
+    border-radius: 6px;
+    transition:
+      background 0.2s,
+      transform 0.2s;
+
+    &:hover {
+      background: var(--global-code-bg-color);
+      transform: translateY(-2px);
+    }
+  }
+
+  b {
+    display: block;
+    font-size: 1.15rem;
+    font-style: italic;
+    font-weight: 600;
+    color: var(--global-theme-color);
+    margin-bottom: 0.15rem;
+  }
+
+  span {
+    color: var(--global-text-color-light);
+  }
+}
+
+@media (max-width: 992px) {
+  .lab-legend {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 .lab-questions {
   list-style: none;
   padding-left: 0;
