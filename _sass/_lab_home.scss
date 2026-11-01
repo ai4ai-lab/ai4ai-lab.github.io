@@ -435,3 +435,15 @@ html[data-theme="dark"] .navbar .navbar-brand.lab-logo {
     text-decoration: none;
   }
 }
+
+// Text under photos on the Team page uses the site font, not monospace
+.people-row .more-info {
+  font-family: inherit;
+  font-size: 0.95rem;
+  line-height: 1.5;
+
+  p {
+    display: block;
+    margin: 0 0 0.35rem;
+  }
+}
