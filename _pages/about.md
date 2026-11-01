@@ -41,11 +41,11 @@ latest_posts:
   <h2 class="lab-section-title">Research</h2>
   <p>We work on three central questions:</p>
   <ul class="lab-questions">
-    <li>How should people and AI share consequential decisions? <span class="lab-q-topics">(learning to defer, interpretability, concept-based models, inverse reinforcement learning)</span></li>
-    <li>How do we know whether a decision policy can be trusted before it is used? <span class="lab-q-topics">(off-policy evaluation, causal inference, uncertainty quantification)</span></li>
-    <li>How should AI act when its decisions change the world it learns from? <span class="lab-q-topics">(sequential decision-making, distribution shift, continual learning, causal discovery and experimental design)</span></li>
+    <li>How can humans and AI work together for consequential decisions? <span class="lab-q-topics">(learning to defer, concept-based models, inverse reinforcement learning)</span></li>
+    <li>How do we interact with the environment, while avoiding risk but learning as quickly as possible? <span class="lab-q-topics">(meta-learning, Bayesian optimisation, model selection, uncertainty quantification)</span></li>
+    <li>How should AI act when its decisions change the world it learns from? <span class="lab-q-topics">(off-policy evaluation, distribution shift, continual learning, causal discovery, causal inference and experimental design)</span></li>
   </ul>
-  <p>These questions arise wherever decisions unfold over time from imperfect data and are relevant for small-data decision-making (e.g. clinical decision systems) and for large-scale foundation models.</p>
+  <p>These questions are relevant for small-data decision-making (e.g. clinical decision systems) and for large-scale foundation models.</p>
   <p class="lab-join">
     <b>Join us:</b> we are looking for PhD students interested in reinforcement learning, causal inference, Bayesian methods and interpretability with applications to healthcare. Contact <a href="mailto:sp.ai4ai.lab@gmail.com">sp.ai4ai.lab@gmail.com</a>.
   </p>
