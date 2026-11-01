@@ -184,6 +184,7 @@ exclude:
   - _pages/people_*.md
   - purgecss.config.js
   - README.md
+  - AL-FOLIO.md
   - readme_preview/
   - vendor
 keep_files:
