@@ -9,13 +9,12 @@ last_name:
 contact_note: >
   Feel free to reach out regarding research collaborations or inquiries.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  AI for Actionable Impact Lab at Imperial College London. Led by Dr. Sonali Parbhoo. Developing trustworthy AI systems for healthcare through causal inference, reinforcement learning, and interpretability.
+  The AI4AI Lab (AI for Actionable Impact) is a machine learning research group at Imperial College London, led by Sonali Parbhoo. We build AI that people can act on: models whose outputs can be used to make real decisions in high-stakes settings.
 footer_text: >
-  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+  Contact: <a href="mailto:sp.ai4ai.lab@gmail.com">sp.ai4ai.lab@gmail.com</a>
 keywords: machine-learning, healthcare-ai, causal-inference, reinforcement-learning, interpretability, safe-rl, bayesian-methods # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: logo.png # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: favicon.png # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://ai4ai-lab.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
@@ -62,9 +61,9 @@ max_width: 930px
 # -----------------------------------------------------------------------------
 # Display links to the page with a preview object on social media.
 # see https://schema.org/docs/faq.html for more information
-serve_og_meta: false # Include Open Graph meta tags in the HTML head
+serve_og_meta: true # Include Open Graph meta tags in the HTML head
 serve_schema_org: false # Include Schema.org in the HTML head
-og_image: # The site-wide (default for all links) Open Graph preview image
+og_image: https://ai4ai-lab.github.io/assets/img/og_preview.jpg # preview image when the site is shared
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
