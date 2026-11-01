@@ -1,0 +1,69 @@
+<figure class="lab-diagram" aria-labelledby="lab-diagram-caption">
+  <svg viewBox="0 0 900 380" role="img" aria-labelledby="lab-diagram-title" xmlns="http://www.w3.org/2000/svg">
+    <title id="lab-diagram-title">
+      Evidence leads to a decision and then an action. Uncertainty bears on the evidence, interpretability on the decision, and causality on the action. People are at the decision. Acting changes the world, which changes the evidence.
+    </title>
+    <defs>
+      <marker id="lab-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+        <path d="M0,0 L10,5 L0,10 z" class="d-arrowhead" />
+      </marker>
+      <marker id="lab-arrow-loop" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+        <path d="M0,0 L10,5 L0,10 z" class="d-arrowhead-loop" />
+      </marker>
+    </defs>
+
+    <!-- cornerstones -->
+    <g class="d-pill">
+      <rect x="85" y="10" width="210" height="58" rx="29" />
+      <text x="190" y="36" class="d-key">Uncertainty</text>
+      <text x="190" y="56" class="d-def">what we don't know</text>
+    </g>
+    <g class="d-pill">
+      <rect x="345" y="10" width="210" height="58" rx="29" />
+      <text x="450" y="36" class="d-key">Interpretability</text>
+      <text x="450" y="56" class="d-def">why a model decides as it does</text>
+    </g>
+    <g class="d-pill">
+      <rect x="605" y="10" width="210" height="58" rx="29" />
+      <text x="710" y="36" class="d-key">Causality</text>
+      <text x="710" y="56" class="d-def">what happens when we act</text>
+    </g>
+    <line x1="190" y1="68" x2="190" y2="128" class="d-link" />
+    <line x1="450" y1="68" x2="450" y2="128" class="d-link" />
+    <line x1="710" y1="68" x2="710" y2="128" class="d-link" />
+
+    <!-- evidence, decision, action -->
+    <g class="d-box">
+      <rect x="95" y="130" width="190" height="62" rx="12" />
+      <text x="190" y="168" class="d-stage">Evidence</text>
+    </g>
+    <g class="d-box d-box-main">
+      <rect x="355" y="130" width="190" height="62" rx="12" />
+      <text x="450" y="168" class="d-stage">Decision</text>
+    </g>
+    <g class="d-box">
+      <rect x="615" y="130" width="190" height="62" rx="12" />
+      <text x="710" y="168" class="d-stage">Action</text>
+    </g>
+    <line x1="287" y1="161" x2="351" y2="161" class="d-flow" marker-end="url(#lab-arrow)" />
+    <line x1="547" y1="161" x2="611" y2="161" class="d-flow" marker-end="url(#lab-arrow)" />
+
+    <!-- people -->
+    <line x1="450" y1="192" x2="450" y2="232" class="d-link" />
+    <g class="d-pill">
+      <rect x="345" y="234" width="210" height="58" rx="29" />
+      <text x="450" y="260" class="d-key">People</text>
+      <text x="450" y="280" class="d-def">who act on the decision</text>
+    </g>
+
+    <!-- feedback -->
+    <path d="M710,192 C710,350 190,350 190,196" class="d-flow d-loop" marker-end="url(#lab-arrow-loop)" />
+    <text x="450" y="362" class="d-loop-label">acting changes the world, and with it the evidence</text>
+
+    <!-- question markers -->
+    <g class="d-num"><circle cx="560" cy="134" r="14" /><text x="560" y="139">1</text></g>
+    <g class="d-num"><circle cx="820" cy="134" r="14" /><text x="820" y="139">2</text></g>
+    <g class="d-num"><circle cx="600" cy="318" r="14" /><text x="600" y="323">3</text></g>
+  </svg>
+  <figcaption id="lab-diagram-caption" class="sr-only">How the parts of our work fit together.</figcaption>
+</figure>

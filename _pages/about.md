@@ -40,25 +40,12 @@ latest_posts:
 
 <section class="lab-interests">
   <h2 class="lab-section-title">Research</h2>
-  <div class="lab-logo-explainer">
-    <div class="lab-mark">
-      <img class="logo-light" src="{{ 'assets/img/ai4ai_mark.svg' | relative_url }}" alt="AI4AI logo: causality, interpretability and uncertainty around people">
-      <img class="logo-dark" src="{{ 'assets/img/ai4ai_mark_dark.svg' | relative_url }}" alt="" style="display: none">
-    </div>
-    <div class="lab-mark-text">
-      <div class="lab-legend">
-        <div><b>Causality</b><span>What happens when we act</span></div>
-        <div><b>Interpretability</b><span>Why a model decides as it does</span></div>
-        <div><b>Uncertainty</b><span>What we don't know</span></div>
-        <div><b>People</b><span>Who acts on the decision</span></div>
-      </div>
-      <p>Actionability rests on three cornerstones that inform one another, with people at the centre. We work on three central questions:</p>
-    </div>
-  </div>
+  {% include research_diagram.liquid %}
+  <p>Actionability rests on three cornerstones that inform one another, with people at the centre. We work on three central questions, marked on the diagram:</p>
   <ul class="lab-questions">
-    <li><span class="lab-tag">People · I</span> <span class="lab-q">How can humans and AI work together for consequential decisions?</span> <span class="lab-q-topics">(learning to defer, concept-based models, inverse reinforcement learning)</span></li>
-    <li><span class="lab-tag">U</span> <span class="lab-q">How do we interact with the environment, while avoiding risk but learning as quickly as possible?</span> <span class="lab-q-topics">(meta-learning, Bayesian optimisation, model selection, uncertainty quantification)</span></li>
-    <li><span class="lab-tag">C</span> <span class="lab-q">How should AI act when its decisions change the world it learns from?</span> <span class="lab-q-topics">(off-policy evaluation, distribution shift, continual learning, causal discovery, causal inference and experimental design)</span></li>
+    <li><span class="lab-qnum">1</span> <span class="lab-q">How can humans and AI work together for consequential decisions?</span> <span class="lab-q-topics">(learning to defer, concept-based models, inverse reinforcement learning)</span></li>
+    <li><span class="lab-qnum">2</span> <span class="lab-q">How do we interact with the environment, while avoiding risk but learning as quickly as possible?</span> <span class="lab-q-topics">(meta-learning, Bayesian optimisation, model selection, uncertainty quantification)</span></li>
+    <li><span class="lab-qnum">3</span> <span class="lab-q">How should AI act when its decisions change the world it learns from?</span> <span class="lab-q-topics">(off-policy evaluation, distribution shift, continual learning, causal discovery, causal inference and experimental design)</span></li>
   </ul>
   <p>These questions are relevant for small-data decision-making (e.g. clinical decision systems) and for large-scale foundation models.</p>
 </section>
