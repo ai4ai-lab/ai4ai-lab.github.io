@@ -37,40 +37,7 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/teaching/";
           },
-        },{id: "post-the-alignment-auditor-a-bayesian-framework-for-verifying-and-refining-llm-objectives",
-        
-          title: "The Alignment Auditor: A Bayesian Framework for Verifying and Refining LLM Objectives",
-        
-        description: "Introducing a new framework for auditing the alignment of Large Language Models through Bayesian inference",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2025/alignment-auditor/";
-          
-        },
-      },{id: "post-improving-ards-diagnosis-through-context-aware-concept-bottleneck-models",
-        
-          title: "Improving ARDS Diagnosis Through Context-Aware Concept Bottleneck Models",
-        
-        description: "Combining ICU data with LLM-extracted concepts from clinical notes and imaging to improve ARDS diagnosis accuracy",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2025/ards-diagnosis-cbm/";
-          
-        },
-      },{id: "post-concept-driven-off-policy-evaluation",
-        
-          title: "Concept-Driven Off-Policy Evaluation",
-        
-        description: "Rethinking OPE using interpretable concepts for low-variance, transparent, and actionable evaluation",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2025/concept-driven-ope/";
-          
-        },
-      },{id: "news-the-alignment-auditor-a-bayesian-framework-for-verifying-and-refining-llm-objectives-was-presented-at-iclr-2026",
+        },{id: "news-the-alignment-auditor-a-bayesian-framework-for-verifying-and-refining-llm-objectives-was-presented-at-iclr-2026",
           title: 'The Alignment Auditor: A Bayesian Framework for Verifying and Refining LLM Objectives was...',
           description: "",
           section: "News",},{id: "news-off-by-a-beat-the-effects-of-temporal-misalignment-in-reinforcement-learning-for-sepsis-treatment-was-accepted-at-npj-digital-medicine",
