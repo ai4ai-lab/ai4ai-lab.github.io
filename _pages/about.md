@@ -51,7 +51,7 @@ latest_posts:
         <div><b>Uncertainty</b><span>What we don't know</span></div>
         <div><b>People</b><span>Who acts on the decision</span></div>
       </div>
-      <p>Our work rests on three cornerstones that inform one another, with people at the centre. We work on three central questions:</p>
+      <p>Actionability rests on three cornerstones that inform one another, with people at the centre. We work on three central questions:</p>
     </div>
   </div>
   <ul class="lab-questions">
