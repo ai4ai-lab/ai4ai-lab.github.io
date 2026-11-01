@@ -7,6 +7,18 @@ nav: true
 nav_order: 6
 ---
 
+### Machine Learning
+
+**ELEC60019, Autumn 2026/2027**
+
+Machine learning underpins technologies from medical diagnosis and autonomous systems to large language models. These systems rest on a common set of ideas: how a model learns from data, why it generalises beyond its training examples, and what goes wrong when it does not. This course teaches those ideas in depth, so that you can understand, assess and build on modern methods rather than only use them.
+
+The course focuses on the mathematics behind machine learning. It starts with the components of learning, problem formulation, and simple predictors such as the perceptron and linear regression. It then asks when learning is feasible, covering empirical risk minimisation, generalisation bounds, the Hoeffding and VC inequalities, and the trade-off between performance and complexity. These concepts underlie current questions such as why large neural networks generalise and how much data a model needs. They also explain overfitting and regularisation, which reappear in deep learning as weight decay and dropout.
+
+You will then study support vector machines and kernels, logistic regression, gradient descent, multilayer perceptrons and backpropagation, nearest neighbour classification, principal component analysis, and clustering with k-means, kernel k-means and Gaussian mixture models. Gradient descent and backpropagation are how deep networks and language models are trained today. Nearest neighbour search, dimensionality reduction and clustering are routinely used to retrieve, visualise and organise the embeddings these models produce. Python exercises in Colab give practice applying the theory to real problems.
+
+---
+
 ### Machine Learning for Safety-Critical Decision Making
 
 **ELEC70122, Spring 2026/2027**
