@@ -25,8 +25,8 @@ latest_posts:
   </div>
   <div class="lab-hero-text">
     <h1 class="lab-name lab-name-logo">
-      <img class="logo-light" src="{{ 'assets/img/ai4ai_logo.svg' | relative_url }}" alt="AI4AI Lab: AI for Actionable Impact" width="280" style="width: 280px; max-width: 100%; height: auto">
-      <img class="logo-dark" src="{{ 'assets/img/ai4ai_logo_dark.svg' | relative_url }}" alt="AI4AI Lab: AI for Actionable Impact" width="280" style="display: none; width: 280px; max-width: 100%; height: auto">
+      <img class="logo-light" src="{{ 'assets/img/ai4ai_logo.svg' | relative_url }}" alt="AI4AI Lab: AI for Actionable Impact" width="230" style="width: 230px; max-width: 100%; height: auto">
+      <img class="logo-dark" src="{{ 'assets/img/ai4ai_logo_dark.svg' | relative_url }}" alt="AI4AI Lab: AI for Actionable Impact" width="230" style="display: none; width: 230px; max-width: 100%; height: auto">
     </h1>
     <p class="lab-affil">{{ page.subtitle }}</p>
     <p class="lab-lede">
