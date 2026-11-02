@@ -14,7 +14,7 @@ python3 bin/scholar_sync.py
 python3 bin/make_thumbnails.py || echo "Thumbnails step failed; publications are still synced."
 [ -f _bibliography/.thumbnail_skipped.json ] || echo "[]" > _bibliography/.thumbnail_skipped.json
 
-git add _bibliography/papers.bib _bibliography/.scholar_seen.json \
+git add _bibliography/papers.bib _bibliography/.scholar_seen.json _news \
   _bibliography/.thumbnail_skipped.json assets/img/publication_preview
 if git diff --cached --quiet; then
   echo "$(date '+%F %T') No new publications."

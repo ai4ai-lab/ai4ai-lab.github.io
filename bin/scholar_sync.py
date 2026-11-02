@@ -11,7 +11,9 @@ Fetches Scholar directly; run it from your own computer (see bin/scholar_sync_lo
 SERPAPI_API_KEY environment variable is set, falls back to SerpApi.
 
 Usage:
-  python bin/scholar_sync.py                 # add new papers
+  python bin/scholar_sync.py                 # add new papers, plus a news item
+                                             # for each new peer-reviewed one
+  python bin/scholar_sync.py --no-news       # add new papers, no news items
   python bin/scholar_sync.py --dry-run       # print what would be added
   python bin/scholar_sync.py --mark-all-seen # record everything on Scholar now
                                              # as seen, add nothing
@@ -35,6 +37,7 @@ ROOT = Path(__file__).resolve().parent.parent
 BIB = ROOT / "_bibliography" / "papers.bib"
 SEEN = ROOT / "_bibliography" / ".scholar_seen.json"
 SOCIALS = ROOT / "_data" / "socials.yml"
+NEWS = ROOT / "_news"
 
 HEADERS = {
     "User-Agent": (
@@ -330,12 +333,88 @@ def build_entry(item, info, used_keys):
     return "\n".join(lines)
 
 
+
+# ---------------------------------------------------------------- news
+
+PREPRINT_ABBR = {"arxiv", "medrxiv", "biorxiv"}
+
+
+def bib_field(entry, name):
+    m = re.search(r"\n\s*" + name + r"\s*=\s*\{(.*?)\},?\s*(?=\n)", entry)
+    return re.sub(r"[{}]", "", m.group(1)).strip() if m else ""
+
+
+def lab_surnames():
+    team = ROOT / "_data" / "team.yml"
+    names = re.findall(r"^- name:\s*(.+)$", team.read_text(), re.M) if team.exists() else []
+    return {n.strip().split()[-1].lower() for n in names}
+
+
+def author_list(bib_authors):
+    """All authors if three or fewer; otherwise the first author, any lab
+    members, and "and others"."""
+    names = []
+    for a in bib_authors.split(" and "):
+        last, _, first = a.partition(",")
+        names.append(f"{first.strip()} {last.strip()}".strip())
+    if len(names) <= 1:
+        return "".join(names)
+    if len(names) <= 3:
+        return ", ".join(names[:-1]) + " and " + names[-1]
+    lab = lab_surnames()
+    shown = [names[0]] + [n for n in names[1:] if n.split()[-1].lower() in lab]
+    return ", ".join(shown) + " and others"
+
+
+def news_for(entry, user, today):
+    """A news item for a new peer-reviewed paper, or None for preprints."""
+    etype = re.match(r"@(\w+)\{", entry).group(1).lower()
+    title = bib_field(entry, "title")
+    abbr = bib_field(entry, "abbr")
+    venue = bib_field(entry, "journal") or bib_field(entry, "booktitle")
+    if not title or not venue or abbr.lower() in PREPRINT_ABBR or re.search(r"arxiv|rxiv|preprint", venue, re.I):
+        return None
+    sid = bib_field(entry, "google_scholar_id")
+    link = (f"https://scholar.google.com/citations?view_op=view_citation&hl=en&user={user}"
+            f"&citation_for_view={user}:{sid}") if sid else ""
+    shown = title.replace("[", "(").replace("]", ")")
+    paper = f"[{shown}]({link})" if link else f"*{shown}*"
+    authors = author_list(bib_field(entry, "author"))
+    year = bib_field(entry, "year")
+    if etype == "inproceedings":
+        where = f"appeared at {abbr} {year}".strip() if abbr else f"appeared at {venue}"
+    else:
+        where = f"was published in *{venue}*"
+    text = f"{paper} by {authors} {where}." if authors else f"{paper} {where}."
+    return ("---\nlayout: post\n"
+            f"date: {today} 09:00:00-0000\n"
+            "inline: true\nrelated_posts: false\n---\n\n" + text + "\n")
+
+
+def write_news(entries, user):
+    today = time.strftime("%Y-%m-%d")
+    made = []
+    for e in entries:
+        item = news_for(e, user, today)
+        if not item:
+            continue
+        key = re.match(r"@\w+\{([^,]+),", e).group(1)
+        path = NEWS / f"{today[:7]}-paper-{key.lower()}.md"
+        if path.exists():
+            continue
+        NEWS.mkdir(exist_ok=True)
+        path.write_text(item)
+        made.append(path.name)
+    return made
+
 # ---------------------------------------------------------------- main
 
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--mark-all-seen", action="store_true")
+    ap.add_argument("--no-news", action="store_true",
+                    help="don't write news items for new peer-reviewed papers")
     ap.add_argument("--max-new", type=int, default=20,
                     help="cap on papers added per run (detail pages are rate-limited)")
     args = ap.parse_args()
@@ -404,6 +483,9 @@ def main():
         pos = m.start() if m else len(bib_text)
         block = "\n\n".join(entries) + "\n\n"
         BIB.write_text(bib_text[:pos] + block + bib_text[pos:])
+        if not args.no_news:
+            for name in write_news(entries, user):
+                print(f"news item added: _news/{name}")
     if newly_seen:
         SEEN.write_text(json.dumps(sorted(seen | newly_seen), indent=2) + "\n")
 

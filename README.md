@@ -141,7 +141,7 @@ Talks are listed in `_pages/talks.md`, newest first, one bullet per talk:
 
 ### Automatic updates
 
-Every Monday at 9:00, a job on Sonali's Mac pulls new papers from her Google Scholar profile, adds them to `_bibliography/papers.bib`, makes a thumbnail from each new paper's Figure 1, and pushes the result. You don't need to do anything for new papers to appear, but you may want to tidy a new entry (see below).
+Every Monday at 9:00, a job on Sonali's Mac pulls new papers from her Google Scholar profile, adds them to `_bibliography/papers.bib`, makes a thumbnail from each new paper's Figure 1, writes a news item for each new peer-reviewed paper (not arXiv preprints), and pushes the result. Auto-written news items are in `_news/` with names like `2026-11-paper-<key>.md`; edit or delete them like any other news item. You don't need to do anything for new papers to appear, but you may want to tidy a new entry (see below).
 
 ### Edit or add a paper by hand
 
