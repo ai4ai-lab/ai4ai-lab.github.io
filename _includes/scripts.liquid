@@ -223,6 +223,21 @@
   {% endunless %}
 {% endif %}
 
+{% if site.goatcounter_code and site.goatcounter_code != "" %}
+  <!-- GoatCounter: cookie-free visitor counts. Clicks on PDF, slides and code links are counted too. -->
+  <script data-goatcounter="https://{{ site.goatcounter_code }}.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+  <script>
+    document.addEventListener('click', function (e) {
+      var a = e.target.closest && e.target.closest('a[href]');
+      if (!a || !window.goatcounter || !window.goatcounter.count) return;
+      var href = a.getAttribute('href');
+      var kind = /\.pdf($|\?)|\/pdf[\/?]/i.test(href) ? 'pdf' : /github\.com/i.test(href) ? 'code' : null;
+      if (!kind) return;
+      window.goatcounter.count({ path: kind + ': ' + href, title: (a.closest('li') || a).innerText.slice(0, 100), event: true });
+    });
+  </script>
+{% endif %}
+
 {% if site.enable_google_analytics %}
   <!-- Analytics -->
   <!-- Global site tag (gtag.js) - Google Analytics -->
