@@ -58,6 +58,12 @@ profiles:
     image_circular: false # crops the image to make it circular
     more_info: >
       <p><a href="mailto:yuxin.wang1@lmu.de">yuxin.wang1@lmu.de</a></p>
+
+  - align: right
+    image: hannah_liu.jpg
+    content: people_hannah.md
+    image_circular: false # crops the image to make it circular
+
   - align: right
     image: pranav_sharma.jpg
     content: people_pranav.md

@@ -1,0 +1,5 @@
+## Hannah Liu
+
+Hannah is a visiting researcher in the AI4AI Lab, working on safety in foundation models. She is a PhD student in Design Engineering at Imperial College London, supervised by Pietro Ferraro, where her research develops scalable AI governance frameworks that are model- and industry-agnostic and globally applicable, using technical methods as the backbone of governance to address questions in social science and AI public policy. She holds a Master's in AI Applications and Innovation from Imperial and a Bachelor's in Cognitive Science from the University of Pennsylvania.
+
+Hannah is also a Research Engineer in AI Policy & Governance at the Responsible AI Institute, where she helps Fortune 100 companies and NHS-affiliated healthcare professionals build proactive AI governance structures. Her work has been adopted by organisations worldwide, her published framework won two awards at the GenAI Berlin conference, and she sits on an OWASP working group on the Agent Control Standard framework. Outside work, she is a competitive swimmer, beginner scuba diver, and puzzle enthusiast.
