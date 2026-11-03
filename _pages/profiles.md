@@ -63,6 +63,9 @@ profiles:
     image: hannah_liu.jpg
     content: people_hannah.md
     image_circular: false # crops the image to make it circular
+    more_info: >
+      <p><a href="mailto:hannah.liu25@imperial.ac.uk">hannah.liu25@imperial.ac.uk</a></p>
+      <p><a href="https://hannahmliu.com/">hannahmliu.com</a></p>
 
   - align: right
     image: pranav_sharma.jpg

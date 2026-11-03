@@ -1,4 +1,4 @@
-## Hannah Liu
+## <a class="people-name-link" href="https://scholar.google.com/citations?user=VqE_eFIAAAAJ" title="Google Scholar">Hannah Liu</a>
 
 Hannah is a visiting researcher in the AI4AI Lab, working on safety in foundation models. She is a PhD student in Design Engineering at Imperial College London, supervised by Pietro Ferraro, where her research develops scalable AI governance frameworks that are model- and industry-agnostic and globally applicable, using technical methods as the backbone of governance to address questions in social science and AI public policy. She holds a Master's in AI Applications and Innovation from Imperial and a Bachelor's in Cognitive Science from the University of Pennsylvania.
 
